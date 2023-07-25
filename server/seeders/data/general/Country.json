@@ -1,0 +1,1716 @@
+{
+  "RECORDS": [
+    {
+      "id": "1",
+      "description": "Australia",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "2",
+      "description": "Austria",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "3",
+      "description": "Azerbaiyán",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "4",
+      "description": "Anguilla",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "5",
+      "description": "Argentina",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "6",
+      "description": "Armenia",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "7",
+      "description": "Bielorrusia",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "8",
+      "description": "Belice",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "9",
+      "description": "Bélgica",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "10",
+      "description": "Bermudas",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "11",
+      "description": "Bulgaria",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "12",
+      "description": "Brasil",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "13",
+      "description": "Reino Unido",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "14",
+      "description": "Hungría",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "15",
+      "description": "Vietnam",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "16",
+      "description": "Haiti",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "17",
+      "description": "Guadalupe",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "18",
+      "description": "Alemania",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "19",
+      "description": "Países Bajos, Holanda",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "20",
+      "description": "Grecia",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "21",
+      "description": "Georgia",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "22",
+      "description": "Dinamarca",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "23",
+      "description": "Egipto",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "24",
+      "description": "Israel",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "25",
+      "description": "India",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "26",
+      "description": "Irán",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "27",
+      "description": "Irlanda",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "28",
+      "description": "España",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "29",
+      "description": "Italia",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "30",
+      "description": "Kazajstán",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "31",
+      "description": "Camerún",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "32",
+      "description": "Canadá",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "33",
+      "description": "Chipre",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "34",
+      "description": "Kirguistán",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "35",
+      "description": "China",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "36",
+      "description": "Costa Rica",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "37",
+      "description": "Kuwait",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "38",
+      "description": "Letonia",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "39",
+      "description": "Libia",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "40",
+      "description": "Lituania",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "41",
+      "description": "Luxemburgo",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "42",
+      "description": "México",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "43",
+      "description": "Moldavia",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "44",
+      "description": "Mónaco",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "45",
+      "description": "Nueva Zelanda",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "46",
+      "description": "Noruega",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "47",
+      "description": "Polonia",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "48",
+      "description": "Portugal",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "49",
+      "description": "Reunión",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "50",
+      "description": "Rusia",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "51",
+      "description": "El Salvador",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "52",
+      "description": "Eslovaquia",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "53",
+      "description": "Eslovenia",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "54",
+      "description": "Surinam",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "55",
+      "description": "Estados Unidos",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "56",
+      "description": "Tadjikistan",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "57",
+      "description": "Turkmenistan",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "58",
+      "description": "Islas Turcas y Caicos",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "59",
+      "description": "Turquía",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "60",
+      "description": "Uganda",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "61",
+      "description": "Uzbekistán",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "62",
+      "description": "Ucrania",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "63",
+      "description": "Finlandia",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "64",
+      "description": "Francia",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "65",
+      "description": "República Checa",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "66",
+      "description": "Suiza",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "67",
+      "description": "Suecia",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "68",
+      "description": "Estonia",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "69",
+      "description": "Corea del Sur",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "70",
+      "description": "Japón",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "71",
+      "description": "Croacia",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "72",
+      "description": "Rumanía",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "73",
+      "description": "Hong Kong",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "74",
+      "description": "Indonesia",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "75",
+      "description": "Jordania",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "76",
+      "description": "Malasia",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "77",
+      "description": "Singapur",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "78",
+      "description": "Taiwan",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "79",
+      "description": "Bosnia y Herzegovina",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "80",
+      "description": "Bahamas",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "81",
+      "description": "Chile",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "82",
+      "description": "Colombia",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "83",
+      "description": "Islandia",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "84",
+      "description": "Corea del Norte",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "85",
+      "description": "Macedonia",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "86",
+      "description": "Malta",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "87",
+      "description": "Pakistán",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "88",
+      "description": "Papúa-Nueva Guinea",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "89",
+      "description": "Perú",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "90",
+      "description": "Filipinas",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "91",
+      "description": "Arabia Saudita",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "92",
+      "description": "Tailandia",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "93",
+      "description": "Emiratos árabes Unidos",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "94",
+      "description": "Groenlandia",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "95",
+      "description": "Venezuela",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "96",
+      "description": "Zimbabwe",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "97",
+      "description": "Kenia",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "98",
+      "description": "Algeria",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "99",
+      "description": "Líbano",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "100",
+      "description": "Botsuana",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "101",
+      "description": "Tanzania",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "102",
+      "description": "Namibia",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "103",
+      "description": "Ecuador",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "104",
+      "description": "Marruecos",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "105",
+      "description": "Ghana",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "106",
+      "description": "Siria",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "107",
+      "description": "Nepal",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "108",
+      "description": "Mauritania",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "109",
+      "description": "Seychelles",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "110",
+      "description": "Paraguay",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "111",
+      "description": "Uruguay",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "112",
+      "description": "Congo (Brazzaville)",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "113",
+      "description": "Cuba",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "114",
+      "description": "Albania",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "115",
+      "description": "Nigeria",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "116",
+      "description": "Zambia",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "117",
+      "description": "Mozambique",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "119",
+      "description": "Angola",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "120",
+      "description": "Sri Lanka",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "121",
+      "description": "Etiopía",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "122",
+      "description": "Túnez",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "123",
+      "description": "Bolivia",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "124",
+      "description": "Panamá",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "125",
+      "description": "Malawi",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "126",
+      "description": "Liechtenstein",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "127",
+      "description": "Bahrein",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "128",
+      "description": "Barbados",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "130",
+      "description": "Chad",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "131",
+      "description": "Man sla de",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "132",
+      "description": "Jamaica",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "133",
+      "description": "Malí",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "134",
+      "description": "Madagascar",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "135",
+      "description": "Senegal",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "136",
+      "description": "Togo",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "137",
+      "description": "Honduras",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "138",
+      "description": "República Dominicana",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "139",
+      "description": "Mongolia",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "140",
+      "description": "Irak",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "141",
+      "description": "Sudáfrica",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "142",
+      "description": "Aruba",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "143",
+      "description": "Gibraltar",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "144",
+      "description": "Afganistán",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "145",
+      "description": "Andorra",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "147",
+      "description": "Antigua y Barbuda",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "149",
+      "description": "Bangladesh",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "151",
+      "description": "Benín",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "152",
+      "description": "Bután",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "154",
+      "description": "Islas Virgenes Británicas",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "155",
+      "description": "Brunéi",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "156",
+      "description": "Burkina Faso",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "157",
+      "description": "Burundi",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "158",
+      "description": "Camboya",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "159",
+      "description": "Cabo Verde",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "164",
+      "description": "Comores",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "165",
+      "description": "Congo (Kinshasa)",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "166",
+      "description": "Cook slas",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "168",
+      "description": "Costa de Marfil",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "169",
+      "description": "Djibouti ibuti",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "171",
+      "description": "Timor Oriental",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "172",
+      "description": "Guinea Ecuatorial",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "173",
+      "description": "Eritrea",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "175",
+      "description": "Feroe slas",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "176",
+      "description": "Fiyi",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "178",
+      "description": "Polinesia Francesa",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "180",
+      "description": "Gabón",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "181",
+      "description": "Gambia",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "184",
+      "description": "Granada",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "185",
+      "description": "Guatemala",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "186",
+      "description": "Guernsey",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "187",
+      "description": "Guinea",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "188",
+      "description": "Guinea-Bissau",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "189",
+      "description": "Guyana",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "193",
+      "description": "Jersey",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "195",
+      "description": "Kiribati",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "196",
+      "description": "Laos",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "197",
+      "description": "Lesotho",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "198",
+      "description": "Liberia",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "200",
+      "description": "Maldivas",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "201",
+      "description": "Martinica",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "202",
+      "description": "Mauricio",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "205",
+      "description": "Myanmar",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "206",
+      "description": "Nauru",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "207",
+      "description": "Antillas Holandesas",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "208",
+      "description": "Nueva Caledonia",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "209",
+      "description": "Nicaragua",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "210",
+      "description": "Níger",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "212",
+      "description": "Norfolk Island",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "213",
+      "description": "Omán",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "215",
+      "description": "Isla Pitcairn",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "216",
+      "description": "Qatar",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "217",
+      "description": "Ruanda",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "218",
+      "description": "Santa Elena",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "219",
+      "description": "San Cristobal y Nevis",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "220",
+      "description": "Santa Lucía",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "221",
+      "description": "San Pedro y Miquelón",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "222",
+      "description": "San Vincente y Granadinas",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "223",
+      "description": "Samoa",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "224",
+      "description": "San Marino",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "225",
+      "description": "San Tomé y Príncipe",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "226",
+      "description": "Serbia y Montenegro",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "227",
+      "description": "Sierra Leona",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "228",
+      "description": "Islas Salomón",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "229",
+      "description": "Somalia",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "232",
+      "description": "Sudán",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "234",
+      "description": "Swazilandia",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "235",
+      "description": "Tokelau",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "236",
+      "description": "Tonga",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "237",
+      "description": "Trinidad y Tobago",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "239",
+      "description": "Tuvalu",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "240",
+      "description": "Vanuatu",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "241",
+      "description": "Wallis y Futuna",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "242",
+      "description": "Sáhara Occidental",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "243",
+      "description": "Yemen",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "246",
+      "description": "Puerto Rico",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:21-05:05",
+      "updated_at": "2020-08-10 12:53:21-05:05",
+      "deleted_at": null
+    }
+  ]
+}

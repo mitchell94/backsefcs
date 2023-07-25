@@ -1,0 +1,58 @@
+{
+  "RECORDS": [
+    {
+      "id": "1",
+      "order": "1",
+      "description": "Pago personal",
+      "state": "t",
+      "created_at": "2020-10-05 05:39:46.142-05:05",
+      "updated_at": "2020-10-05 05:39:46.142-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "2",
+      "order": "2",
+      "description": "Pago de Materiales",
+      "state": "t",
+      "created_at": "2020-10-05 05:39:46.142-05:05",
+      "updated_at": "2020-10-05 05:39:46.142-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "3",
+      "order": "3",
+      "description": "Derechos de estudios",
+      "state": "t",
+      "created_at": "2020-10-05 05:41:11.994-05:05",
+      "updated_at": "2020-10-05 05:41:45.982-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "4",
+      "order": "4",
+      "description": "Pagos Administrativos",
+      "state": "t",
+      "created_at": "2020-10-05 05:41:37.516-05:05",
+      "updated_at": "2020-10-05 10:37:33.858-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "5",
+      "order": "5",
+      "description": "Graduación",
+      "state": "t",
+      "created_at": "2020-10-05 05:42:05.443-05:05",
+      "updated_at": "2020-10-05 05:42:05.443-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "6",
+      "order": "6",
+      "description": "Descuento",
+      "state": "t",
+      "created_at": "2021-02-17 13:32:52.428-05:05",
+      "updated_at": "2021-02-17 13:32:52.428-05:05",
+      "deleted_at": null
+    }
+  ]
+}

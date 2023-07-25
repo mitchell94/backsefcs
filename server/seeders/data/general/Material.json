@@ -1,0 +1,1264 @@
+{
+  "RECORDS": [
+    {
+      "id": "1",
+      "denomination": "Goma",
+      "type": "Accesorios de escritorio y papelería",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "2",
+      "denomination": "Sacapuntas",
+      "type": "Accesorios de escritorio y papelería",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "3",
+      "denomination": "Estuches para lápices",
+      "type": "Accesorios de escritorio y papelería",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "4",
+      "denomination": "Clips",
+      "type": "Accesorios de escritorio y papelería",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "5",
+      "denomination": "Pin",
+      "type": "Accesorios de escritorio y papelería",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "6",
+      "denomination": "Grapas",
+      "type": "Accesorios de escritorio y papelería",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "7",
+      "denomination": "Sujeta documentos",
+      "type": "Accesorios de escritorio y papelería",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "8",
+      "denomination": "Ligas de hule",
+      "type": "Accesorios de escritorio y papelería",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "9",
+      "denomination": "Calculadora",
+      "type": "Accesorios de escritorio y papelería",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "10",
+      "denomination": "Cuadernos",
+      "type": "Accesorios de escritorio y papelería",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "11",
+      "denomination": "Block",
+      "type": "Accesorios de escritorio y papelería",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "12",
+      "denomination": "Tarjeta multiusus",
+      "type": "Accesorios de escritorio y papelería",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "13",
+      "denomination": "Libro folleto",
+      "type": "Accesorios de escritorio y papelería",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "14",
+      "denomination": "Hojas de repuesto",
+      "type": "Accesorios de escritorio y papelería",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "15",
+      "denomination": "Cubiertas",
+      "type": "Accesorios de escritorio y papelería",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "16",
+      "denomination": "Enmicadora",
+      "type": "Accesorios de escritorio y papelería",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "17",
+      "denomination": "Micas",
+      "type": "Accesorios de escritorio y papelería",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "18",
+      "denomination": "Engrapadoras",
+      "type": "Accesorios de escritorio y papelería",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "19",
+      "denomination": "Desengrapadoras",
+      "type": "Accesorios de escritorio y papelería",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "20",
+      "denomination": "Notas adhesivas",
+      "type": "Accesorios de escritorio y papelería",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "21",
+      "denomination": "Base para calendario",
+      "type": "Accesorios de escritorio y papelería",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "22",
+      "denomination": "Perforadoras y repuestos",
+      "type": "Accesorios de escritorio y papelería",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "23",
+      "denomination": "Portalápices",
+      "type": "Accesorios de escritorio y papelería",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "24",
+      "denomination": "Portaclips",
+      "type": "Accesorios de escritorio y papelería",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "25",
+      "denomination": "Revistero",
+      "type": "Accesorios de escritorio y papelería",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "26",
+      "denomination": "Carpetas folders",
+      "type": "Accesorios de escritorio y papelería",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "27",
+      "denomination": "Cintas",
+      "type": "Tintas y tóner",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "28",
+      "denomination": "Cartuchos",
+      "type": "Tintas y tóner",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "29",
+      "denomination": "Cabezales",
+      "type": "Tintas y tóner",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "30",
+      "denomination": "Monitores",
+      "type": "Consumibles de cómputo",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "31",
+      "denomination": "All In One",
+      "type": "Consumibles de cómputo",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "32",
+      "denomination": "Computadoras de escritorio(CPU)",
+      "type": "Consumibles de cómputo",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "33",
+      "denomination": "Laptops",
+      "type": "Consumibles de cómputo",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "34",
+      "denomination": "Tabletas",
+      "type": "Consumibles de cómputo",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "35",
+      "denomination": "Impresoras Multifuncional",
+      "type": "Consumibles de cómputo",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "36",
+      "denomination": "Escáner",
+      "type": "Consumibles de cómputo",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "37",
+      "denomination": "Copiadoras",
+      "type": "Consumibles de cómputo",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "38",
+      "denomination": "Pantalla TV",
+      "type": "Consumibles de cómputo",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "39",
+      "denomination": "Monitor",
+      "type": "Consumibles de cómputo",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "40",
+      "denomination": "Cargadores",
+      "type": "Consumibles de cómputo",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "41",
+      "denomination": "Estaciones de carga",
+      "type": "Consumibles de cómputo",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "42",
+      "denomination": "UPS",
+      "type": "Consumibles de cómputo",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "43",
+      "denomination": "Reguladores",
+      "type": "Consumibles de cómputo",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "44",
+      "denomination": "Supresores",
+      "type": "Consumibles de cómputo",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "45",
+      "denomination": "Cables adaptadores",
+      "type": "Consumibles de cómputo",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "46",
+      "denomination": "Teléfonos",
+      "type": "Consumibles de cómputo",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "47",
+      "denomination": "Accesorios para telefonía",
+      "type": "Consumibles de cómputo",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "48",
+      "denomination": "Conmutadores",
+      "type": "Consumibles de cómputo",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "49",
+      "denomination": "Frentes de portero",
+      "type": "Consumibles de cómputo",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "50",
+      "denomination": "Blu Ray",
+      "type": "Consumibles de cómputo",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "51",
+      "denomination": "Pizarrones interactivos",
+      "type": "Consumibles de cómputo",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "52",
+      "denomination": "Proyectores",
+      "type": "Consumibles de cómputo",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "53",
+      "denomination": "Detergente",
+      "type": "Productos de limpieza",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 23:04:31.914-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "54",
+      "denomination": "Jabón líquido",
+      "type": "Productos de limpieza",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 23:04:37.654-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "55",
+      "denomination": "Jabón detocador",
+      "type": "Productos de limpieza",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 23:04:43.271-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "56",
+      "denomination": "Desinfectante",
+      "type": "Productos de limpieza",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 23:04:48.497-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "57",
+      "denomination": "Cloro",
+      "type": "Productos de limpieza",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "58",
+      "denomination": "Bicloro",
+      "type": "Productos de limpieza",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "59",
+      "denomination": "Pino",
+      "type": "Productos de limpieza",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "60",
+      "denomination": "Limpiavidrios",
+      "type": "Productos de limpieza",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "61",
+      "denomination": "Líquido quitamanchas",
+      "type": "Productos de limpieza",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "62",
+      "denomination": "Limpiador multiusos",
+      "type": "Productos de limpieza",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "63",
+      "denomination": "Pastillas desodorantes",
+      "type": "Productos de limpieza",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "64",
+      "denomination": "Gel antibacterial",
+      "type": "Productos de limpieza",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "65",
+      "denomination": "Toallas antibacteriales",
+      "type": "Productos de limpieza",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "66",
+      "denomination": "Aromatizantes",
+      "type": "Productos de limpieza",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "67",
+      "denomination": "Insecticida",
+      "type": "Productos de limpieza",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "68",
+      "denomination": "Papel higiénico tradicional",
+      "type": "Productos de limpieza",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "69",
+      "denomination": "Papel higiénico en bobina",
+      "type": "Productos de limpieza",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "70",
+      "denomination": "Cepillos",
+      "type": "Productos de limpieza",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "71",
+      "denomination": "Cestos de basura",
+      "type": "Productos de limpieza",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "72",
+      "denomination": "Balde",
+      "type": "Productos de limpieza",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "73",
+      "denomination": "Balde con exprimidor",
+      "type": "Productos de limpieza",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "74",
+      "denomination": "Escobas",
+      "type": "Productos de limpieza",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "75",
+      "denomination": "Trapeador de piso",
+      "type": "Productos de limpieza",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "76",
+      "denomination": "Franelas",
+      "type": "Productos de limpieza",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "77",
+      "denomination": "Guantes de hule ",
+      "type": "Productos de limpieza",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "78",
+      "denomination": "Guantes de hule látex",
+      "type": "Productos de limpieza",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "79",
+      "denomination": "Bolsa de plástico",
+      "type": "Productos de limpieza",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "80",
+      "denomination": "Recogedor",
+      "type": "Productos de limpieza",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "81",
+      "denomination": "Trapeadores",
+      "type": "Productos de limpieza",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "82",
+      "denomination": "Atomizador",
+      "type": "Productos de limpieza",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "83",
+      "denomination": "Rejilla para mingitorios",
+      "type": "Productos de limpieza",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "84",
+      "denomination": "Tapetes para mingitorios",
+      "type": "Productos de limpieza",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "85",
+      "denomination": "Telas multiusos",
+      "type": "Productos de limpieza",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "86",
+      "denomination": "Alcohol Gel X 380 mL",
+      "type": "Productos de limpieza",
+      "state": "t",
+      "created_at": "2020-10-05 22:48:54.782-05:05",
+      "updated_at": "2020-10-05 22:48:54.782-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "87",
+      "denomination": "Ambientador En Spray X 500 Ml Aprox.",
+      "type": "Productos de limpieza",
+      "state": "t",
+      "created_at": "2020-10-05 22:49:10.683-05:05",
+      "updated_at": "2020-10-05 22:49:10.683-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "88",
+      "denomination": "Cera Al Agua Auto brillante Color Neutral",
+      "type": "Productos de limpieza",
+      "state": "t",
+      "created_at": "2020-10-05 22:49:54.153-05:05",
+      "updated_at": "2020-10-05 22:49:54.153-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "89",
+      "denomination": "Desinfectante Limpiador Aromático",
+      "type": "Productos de limpieza",
+      "state": "t",
+      "created_at": "2020-10-05 22:50:17.917-05:05",
+      "updated_at": "2020-10-05 22:50:17.917-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "90",
+      "denomination": "Recogedor De Plástico Tamaño Mediano",
+      "type": "Productos de limpieza",
+      "state": "t",
+      "created_at": "2020-10-05 22:50:53.536-05:05",
+      "updated_at": "2020-10-05 22:50:53.536-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "91",
+      "denomination": "Tela Franela 70 Cm X 1.00 M Color Verde",
+      "type": "Artículos y productos de limpieza",
+      "state": "t",
+      "created_at": "2020-10-05 22:51:30.716-05:05",
+      "updated_at": "2020-10-05 22:51:30.716-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "92",
+      "denomination": "Trapeador De Hilo Con Mango De Madera",
+      "type": "Productos de limpieza",
+      "state": "t",
+      "created_at": "2020-10-05 22:51:47.182-05:05",
+      "updated_at": "2020-10-05 22:51:47.182-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "93",
+      "denomination": "Archivador De Cartón Con Palanca Lomo Ancho Tamaño A4",
+      "type": "Accesorios de escritorio y papelería",
+      "state": "t",
+      "created_at": "2020-10-05 22:59:19.765-05:05",
+      "updated_at": "2020-10-05 22:59:19.765-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "94",
+      "denomination": "Bolígrafo (Lapicero) De Tinta Seca Punta Fina Color  Azul",
+      "type": "Accesorios de escritorio y papelería",
+      "state": "t",
+      "created_at": "2020-10-05 22:59:39.301-05:05",
+      "updated_at": "2020-10-05 22:59:39.301-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "95",
+      "denomination": "Borrador Blanco Para Lápiz Tamaño Grande",
+      "type": "Accesorios de escritorio y papelería",
+      "state": "t",
+      "created_at": "2020-10-05 22:59:50.693-05:05",
+      "updated_at": "2020-10-05 22:59:50.693-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "96",
+      "denomination": "Calculadora Solar De 12 Dígitos",
+      "type": "Accesorios de escritorio y papelería",
+      "state": "t",
+      "created_at": "2020-10-05 23:00:20.543-05:05",
+      "updated_at": "2020-10-05 23:00:20.543-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "97",
+      "denomination": "Cartulina Dúplex  275 G De 70 Cm X 100 Cm",
+      "type": "Accesorios de escritorio y papelería",
+      "state": "t",
+      "created_at": "2020-10-05 23:00:33.349-05:05",
+      "updated_at": "2020-10-05 23:00:33.349-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "98",
+      "denomination": "Cinta Adhesiva Para Embalaje De 2 In X 55 M",
+      "type": "Accesorios de escritorio y papelería",
+      "state": "t",
+      "created_at": "2020-10-05 23:00:45.888-05:05",
+      "updated_at": "2020-10-05 23:00:45.888-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "99",
+      "denomination": "Clip De Metal Chico Nº 1 X 100",
+      "type": "Accesorios de escritorio y papelería",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "100",
+      "denomination": "Clip Mariposa De Metal Nº 3 X 12",
+      "type": "Accesorios de escritorio y papelería",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "101",
+      "denomination": "Clip Mariposa De Metal Nº 2 X 50",
+      "type": "Accesorios de escritorio y papelería",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "102",
+      "denomination": "Corrector Líquido Tipo Lapicero",
+      "type": "Accesorios de escritorio y papelería",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "103",
+      "denomination": "Cuaderno Empastado Cuadriculado Tamaño A4 X 200 Hojas",
+      "type": "Accesorios de escritorio y papelería",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "104",
+      "denomination": "Cuchilla Para Cortar Papel Con Mango De Plástico",
+      "type": "Accesorios de escritorio y papelería",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "105",
+      "denomination": "Folder Manila Tamaño A4",
+      "type": "Accesorios de escritorio y papelería",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "106",
+      "denomination": "Goma Liquida X 250 G",
+      "type": "Accesorios de escritorio y papelería",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "107",
+      "denomination": "Grapa 26/6 X 5000",
+      "type": "Accesorios de escritorio y papelería",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "108",
+      "denomination": "Index Tabs 3.8 Cm X 25",
+      "type": "Accesorios de escritorio y papelería",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "109",
+      "denomination": "Lápiz Negro Nº 2  Con Borrador",
+      "type": "Accesorios de escritorio y papelería",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "110",
+      "denomination": "Mota Para Pizarra Acrílica",
+      "type": "Accesorios de escritorio y papelería",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "111",
+      "denomination": "Nota autoadhesiva 3in x 3in (7.6 cm x 7.6 cm) Aprox. X 500 hojas",
+      "type": "Accesorios de escritorio y papelería",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "112",
+      "denomination": "Papel Bond 80 G Tamaño A4.",
+      "type": "Accesorios de escritorio y papelería",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "113",
+      "denomination": "Papel Bond 75 G Tamaño A4 De Colores",
+      "type": "Accesorios de escritorio y papelería",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "114",
+      "denomination": "Papel Higienico  X 550 M",
+      "type": "Accesorios de escritorio y papelería",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "115",
+      "denomination": "Papel Lustre De 50 Cm X 65 Cm",
+      "type": "Accesorios de escritorio y papelería",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "116",
+      "denomination": "Papel Lustre De 50 Cm X 65 Cm Color Celeste",
+      "type": "Accesorios de escritorio y papelería",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "117",
+      "denomination": "Papel Lustre De 50 Cm X 65 Cm Color Guinda",
+      "type": "Accesorios de escritorio y papelería",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "118",
+      "denomination": "Papel Lustre 70 Cm X 50 Cm Color Anaranjado",
+      "type": "Accesorios de escritorio y papelería",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "119",
+      "denomination": "Plumón Para Pizarra Acrílica Punta Gruesa Color  Azul",
+      "type": "Accesorios de escritorio y papelería",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "120",
+      "denomination": "Plumón Para Pizarra Acrílica Punta Gruesa Color  Negro",
+      "type": "Accesorios de escritorio y papelería",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "121",
+      "denomination": "Plumón Para Pizarra Acrílica Punta Gruesa Color  Rojo",
+      "type": "Accesorios de escritorio y papelería",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "122",
+      "denomination": "Plumón Para Pizarra Acrílica Punta Gruesa Color  Verde",
+      "type": "Accesorios de escritorio y papelería",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "123",
+      "denomination": "Plumón Resaltador Punta Gruesa Biselada Color Anaranjado",
+      "type": "Accesorios de escritorio y papelería",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "124",
+      "denomination": "Plumón Resaltador Punta Gruesa Biselada Color Anaranjado",
+      "type": "Accesorios de escritorio y papelería",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "125",
+      "denomination": "Regla De Plástico 30 Cm",
+      "type": "Accesorios de escritorio y papelería",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "126",
+      "denomination": "Saca grapa De Metal",
+      "type": "Accesorios de escritorio y papelería",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "127",
+      "denomination": "Sello De Recepción De Metal",
+      "type": "Accesorios de escritorio y papelería",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "128",
+      "denomination": "Sobre Manila Tamaño A4",
+      "type": "Accesorios de escritorio y papelería",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "129",
+      "denomination": "Sobre Manila De 90 G Tamaño Doble Oficio",
+      "type": "Accesorios de escritorio y papelería",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "130",
+      "denomination": "Sujetador Para Papel (Tipo Fastener) De Metal X 50",
+      "type": "Accesorios de escritorio y papelería",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "131",
+      "denomination": "Tampón Con Cubierta De Plástico 12.5 Cm X 9.5 Cm Aprox. Color Azul",
+      "type": "Accesorios de escritorio y papelería",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "132",
+      "denomination": "Tinta De Impresión Para Epson Cód. Ref. T081120 Negro",
+      "type": "Tintas y tóner",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "133",
+      "denomination": "Tinta De Impresión Para Epson Cód. Ref. T081220 Cian",
+      "type": "Tintas y tóner",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "134",
+      "denomination": "Tinta De Impresión Para Epson Cód. Ref. T081320 Magenta",
+      "type": "Tintas y tóner",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "135",
+      "denomination": "Tinta De Impresión Para Epson Cód. Ref. T081420 Amarillo",
+      "type": "Tintas y tóner",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "136",
+      "denomination": "Tinta Para Plumón De Pizarra Acrílica X 30 Ml Color Azul",
+      "type": "Tintas y tóner",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "137",
+      "denomination": "Tinta Para Plumón De Pizarra Acrílica X 30 Ml Color Verde",
+      "type": "Tintas y tóner",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "138",
+      "denomination": "Tinta Para Plumón De Pizarra Acrílica X 30 Ml Color Negro",
+      "type": "Tintas y tóner",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "139",
+      "denomination": "Tinta Para Plumón De Pizarra Acrílica X 30 Ml Color Rojo",
+      "type": "Tintas y tóner",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "140",
+      "denomination": "Tinta Para Tampón X 30 Ml Aprox. Color Azul",
+      "type": "Tintas y tóner",
+      "state": "t",
+      "created_at": "2020-10-05 20:34:59-05:05",
+      "updated_at": "2020-10-05 20:34:59-05:05",
+      "deleted_at": null
+    }
+  ]
+}

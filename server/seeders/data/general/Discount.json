@@ -1,0 +1,34 @@
+{
+  "RECORDS": [
+    {
+      "id": "1",
+      "description": "Descuento trabajador UNSM 20%",
+      "amount": "20",
+      "type": "Estudiante",
+      "state": "t",
+      "created_at": "2021-02-25 20:23:15-05:05",
+      "updated_at": "2021-02-25 20:23:17-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "2",
+      "description": "Convenio Ugel 10%",
+      "amount": "10",
+      "type": "Estudiante",
+      "state": "t",
+      "created_at": "2021-02-25 20:23:15-05:05",
+      "updated_at": "2021-02-25 20:23:17-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "3",
+      "description": "Descuento Beca 30%",
+      "amount": "30",
+      "type": "Estudiante",
+      "state": "t",
+      "created_at": "2021-02-25 20:23:15-05:05",
+      "updated_at": "2021-02-25 20:23:17-05:05",
+      "deleted_at": null
+    }
+  ]
+}

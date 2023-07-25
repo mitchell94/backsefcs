@@ -1,0 +1,292 @@
+{
+  "RECORDS": [
+    {
+      "id": "1",
+      "description": "Docena 12U",
+      "equivalence": "12",
+      "state": "t",
+      "created_at": "2020-10-05 15:38:35.16-05:05",
+      "updated_at": "2020-10-05 15:43:11.862-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "2",
+      "description": "Balde BAL",
+      "equivalence": "1",
+      "state": "t",
+      "created_at": "2020-10-05 15:43:42.57-05:05",
+      "updated_at": "2020-10-05 16:24:27.644-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "3",
+      "description": "Bidones BID",
+      "equivalence": "1",
+      "state": "t",
+      "created_at": "2020-10-05 15:44:20.248-05:05",
+      "updated_at": "2020-10-05 15:44:20.248-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "4",
+      "description": "Bolsa BLS",
+      "equivalence": "1",
+      "state": "t",
+      "created_at": "2020-10-05 15:44:43.189-05:05",
+      "updated_at": "2020-10-05 15:44:43.189-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "5",
+      "description": "Botellas BOT",
+      "equivalence": "1",
+      "state": "t",
+      "created_at": "2020-10-05 15:45:22.78-05:05",
+      "updated_at": "2020-10-05 15:45:22.78-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "6",
+      "description": "Caja CAT",
+      "equivalence": "1",
+      "state": "t",
+      "created_at": "2020-10-05 15:45:45.133-05:05",
+      "updated_at": "2020-10-05 15:45:45.133-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "7",
+      "description": "Fardo FAR",
+      "equivalence": "1",
+      "state": "t",
+      "created_at": "2020-10-05 15:46:20.533-05:05",
+      "updated_at": "2020-10-05 15:46:20.533-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "8",
+      "description": "Frascos FRC",
+      "equivalence": "1",
+      "state": "t",
+      "created_at": "2020-10-05 15:46:43.079-05:05",
+      "updated_at": "2020-10-05 15:46:43.079-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "9",
+      "description": "Galon GAL ",
+      "equivalence": "37",
+      "state": "t",
+      "created_at": "2020-10-05 15:48:10.655-05:05",
+      "updated_at": "2020-10-05 15:48:10.655-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "10",
+      "description": "Gramo GR",
+      "equivalence": "1",
+      "state": "t",
+      "created_at": "2020-10-05 15:47:03.412-05:05",
+      "updated_at": "2020-10-05 15:48:35.455-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "11",
+      "description": "Hoja HOJ",
+      "equivalence": "1",
+      "state": "t",
+      "created_at": "2020-10-05 15:47:03.412-05:05",
+      "updated_at": "2020-10-05 15:48:35.455-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "12",
+      "description": "Kilogramo KG",
+      "equivalence": "1",
+      "state": "t",
+      "created_at": "2020-10-05 15:47:03.412-05:05",
+      "updated_at": "2020-10-05 15:48:35.455-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "13",
+      "description": "Litro L",
+      "equivalence": "1",
+      "state": "t",
+      "created_at": "2020-10-05 15:47:03.412-05:05",
+      "updated_at": "2020-10-05 15:48:35.455-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "14",
+      "description": "Lata LAT",
+      "equivalence": "1",
+      "state": "t",
+      "created_at": "2020-10-05 15:47:03.412-05:05",
+      "updated_at": "2020-10-05 15:48:35.455-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "15",
+      "description": "Metro M",
+      "equivalence": "1",
+      "state": "t",
+      "created_at": "2020-10-05 15:47:03.412-05:05",
+      "updated_at": "2020-10-05 15:48:35.455-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "16",
+      "description": "Metro cuadrado M2",
+      "equivalence": "1",
+      "state": "t",
+      "created_at": "2020-10-05 15:47:03.412-05:05",
+      "updated_at": "2020-10-05 15:48:35.455-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "17",
+      "description": "Metro cubico M3",
+      "equivalence": "1",
+      "state": "t",
+      "created_at": "2020-10-05 15:47:03.412-05:05",
+      "updated_at": "2020-10-05 15:48:35.455-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "18",
+      "description": "Miligramos MGR",
+      "equivalence": "1",
+      "state": "t",
+      "created_at": "2020-10-05 15:47:03.412-05:05",
+      "updated_at": "2020-10-05 15:48:35.455-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "19",
+      "description": "Mililitro ML",
+      "equivalence": "1",
+      "state": "t",
+      "created_at": "2020-10-05 15:47:03.412-05:05",
+      "updated_at": "2020-10-05 15:48:35.455-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "20",
+      "description": "Millar MLL",
+      "equivalence": "1",
+      "state": "t",
+      "created_at": "2020-10-05 15:47:03.412-05:05",
+      "updated_at": "2020-10-05 15:48:35.455-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "21",
+      "description": "Milimetro MM",
+      "equivalence": "1",
+      "state": "t",
+      "created_at": "2020-10-05 15:47:03.412-05:05",
+      "updated_at": "2020-10-05 15:48:35.455-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "22",
+      "description": "Muestras MU",
+      "equivalence": "1",
+      "state": "t",
+      "created_at": "2020-10-05 15:47:03.412-05:05",
+      "updated_at": "2020-10-05 15:48:35.455-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "23",
+      "description": "Onzas OZ",
+      "equivalence": "1",
+      "state": "t",
+      "created_at": "2020-10-05 15:47:03.412-05:05",
+      "updated_at": "2020-10-05 15:48:35.455-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "24",
+      "description": "Paletas PAL",
+      "equivalence": "1",
+      "state": "t",
+      "created_at": "2020-10-05 15:47:03.412-05:05",
+      "updated_at": "2020-10-05 15:48:35.455-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "25",
+      "description": "Paquete PAQ",
+      "equivalence": "1",
+      "state": "t",
+      "created_at": "2020-10-05 15:47:03.412-05:05",
+      "updated_at": "2020-10-05 15:48:35.455-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "26",
+      "description": "Placas PL",
+      "equivalence": "1",
+      "state": "t",
+      "created_at": "2020-10-05 15:47:03.412-05:05",
+      "updated_at": "2020-10-05 15:48:35.455-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "27",
+      "description": "Planchas PLC",
+      "equivalence": "1",
+      "state": "t",
+      "created_at": "2020-10-05 15:47:03.412-05:05",
+      "updated_at": "2020-10-05 15:48:35.455-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "28",
+      "description": "Pliego PLG",
+      "equivalence": "1",
+      "state": "t",
+      "created_at": "2020-10-05 15:47:03.412-05:05",
+      "updated_at": "2020-10-05 15:48:35.455-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "32",
+      "description": "Pulgadas PUL",
+      "equivalence": "1",
+      "state": "t",
+      "created_at": "2020-10-05 15:47:03.412-05:05",
+      "updated_at": "2020-10-05 15:48:35.455-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "33",
+      "description": "Piezas PAZ",
+      "equivalence": "1",
+      "state": "t",
+      "created_at": "2020-10-05 15:47:03.412-05:05",
+      "updated_at": "2020-10-05 15:48:35.455-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "34",
+      "description": "Unidad U",
+      "equivalence": "1",
+      "state": "t",
+      "created_at": "2020-10-05 15:47:03.412-05:05",
+      "updated_at": "2020-10-05 16:04:55.358-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "36",
+      "description": "Rollos ROL",
+      "equivalence": "1",
+      "state": "t",
+      "created_at": "2020-10-05 15:47:03.412-05:05",
+      "updated_at": "2020-10-05 16:05:17.064-05:05",
+      "deleted_at": null
+    }
+  ]
+}

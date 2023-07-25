@@ -1,0 +1,1750 @@
+{
+  "RECORDS": [
+    {
+      "id": "1",
+      "id_department": "1",
+      "description": "BAGUA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "2",
+      "id_department": "1",
+      "description": "BONGARA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "3",
+      "id_department": "1",
+      "description": "CHACHAPOYAS",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "4",
+      "id_department": "1",
+      "description": "CONDORCANQUI",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "5",
+      "id_department": "1",
+      "description": "LUYA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "6",
+      "id_department": "1",
+      "description": "RODRIGUEZ DE MENDOZA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "7",
+      "id_department": "1",
+      "description": "UTCUBAMBA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "8",
+      "id_department": "2",
+      "description": "AIJA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "9",
+      "id_department": "2",
+      "description": "ANTONIO RAYMONDI",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "10",
+      "id_department": "2",
+      "description": "ASUNCION",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "11",
+      "id_department": "2",
+      "description": "BOLOGNESI",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "12",
+      "id_department": "2",
+      "description": "CARHUAZ",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "13",
+      "id_department": "2",
+      "description": "CARLOS F.FITZCARRALD",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "14",
+      "id_department": "2",
+      "description": "CASMA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "15",
+      "id_department": "2",
+      "description": "CORONGO",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "16",
+      "id_department": "2",
+      "description": "HUARAZ",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "17",
+      "id_department": "2",
+      "description": "HUARI",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "18",
+      "id_department": "2",
+      "description": "HUARMEY",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "19",
+      "id_department": "2",
+      "description": "HUAYLAS",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "20",
+      "id_department": "2",
+      "description": "MARISCAL LUZURIAGA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "21",
+      "id_department": "2",
+      "description": "OCROS",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "22",
+      "id_department": "2",
+      "description": "PALLASCA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "23",
+      "id_department": "2",
+      "description": "POMABAMBA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "24",
+      "id_department": "2",
+      "description": "RECUAY",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "25",
+      "id_department": "2",
+      "description": "SANTA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "26",
+      "id_department": "2",
+      "description": "SIHUAS",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "27",
+      "id_department": "2",
+      "description": "YUNGAY",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "28",
+      "id_department": "3",
+      "description": "ABANCAY",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "29",
+      "id_department": "3",
+      "description": "ANDAHUAYLAS",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "30",
+      "id_department": "3",
+      "description": "ANTABAMBA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "31",
+      "id_department": "3",
+      "description": "AYMARAES",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "32",
+      "id_department": "3",
+      "description": "CHINCHEROS",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "33",
+      "id_department": "3",
+      "description": "COTABAMBAS",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "34",
+      "id_department": "3",
+      "description": "GRAU",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "35",
+      "id_department": "4",
+      "description": "AREQUIPA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "36",
+      "id_department": "4",
+      "description": "CAMANA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "37",
+      "id_department": "4",
+      "description": "CARAVELI",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "38",
+      "id_department": "4",
+      "description": "CASTILLA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "39",
+      "id_department": "4",
+      "description": "CAYLLOMA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "40",
+      "id_department": "4",
+      "description": "CONDESUYOS",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "41",
+      "id_department": "4",
+      "description": "ISLAY",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "42",
+      "id_department": "4",
+      "description": "LA UNION",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "43",
+      "id_department": "5",
+      "description": "CANGALLO",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "44",
+      "id_department": "5",
+      "description": "HUAMANGA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "45",
+      "id_department": "5",
+      "description": "HUANCA SANCOS",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "46",
+      "id_department": "5",
+      "description": "HUANTA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "47",
+      "id_department": "5",
+      "description": "LA MAR",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "48",
+      "id_department": "5",
+      "description": "LUCANAS",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "49",
+      "id_department": "5",
+      "description": "PARINACOCHAS",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "50",
+      "id_department": "5",
+      "description": "PAUCAR DEL SARA SARA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "51",
+      "id_department": "5",
+      "description": "SUCRE",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "52",
+      "id_department": "5",
+      "description": "VICTOR FAJARDO",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "53",
+      "id_department": "5",
+      "description": "VILCASHUAMAN",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "54",
+      "id_department": "6",
+      "description": "CAJABAMBA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "55",
+      "id_department": "6",
+      "description": "CAJAMARCA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "56",
+      "id_department": "6",
+      "description": "CELENDIN",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "57",
+      "id_department": "6",
+      "description": "CHOTA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "58",
+      "id_department": "6",
+      "description": "CONTUMAZA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "59",
+      "id_department": "6",
+      "description": "CUTERVO",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "60",
+      "id_department": "6",
+      "description": "HUALGAYOC",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "61",
+      "id_department": "6",
+      "description": "JAEN",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "62",
+      "id_department": "6",
+      "description": "SAN IGNACIO",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "63",
+      "id_department": "6",
+      "description": "SAN MARCOS",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "64",
+      "id_department": "6",
+      "description": "SAN MIGUEL",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "65",
+      "id_department": "6",
+      "description": "SAN PABLO",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "66",
+      "id_department": "6",
+      "description": "SANTA CRUZ",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "67",
+      "id_department": "7",
+      "description": "ACOMAYO",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "68",
+      "id_department": "7",
+      "description": "ANTA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "69",
+      "id_department": "7",
+      "description": "CALCA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "70",
+      "id_department": "7",
+      "description": "CANAS",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "71",
+      "id_department": "7",
+      "description": "CANCHIS",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "72",
+      "id_department": "7",
+      "description": "CHUMBIVILCAS",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "73",
+      "id_department": "7",
+      "description": "CUSCO",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "74",
+      "id_department": "7",
+      "description": "ESPINAR",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "75",
+      "id_department": "7",
+      "description": "LA CONVENCION",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "76",
+      "id_department": "7",
+      "description": "PARURO",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "77",
+      "id_department": "7",
+      "description": "PAUCARTAMBO",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "78",
+      "id_department": "7",
+      "description": "QUISPICANCHI",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "79",
+      "id_department": "7",
+      "description": "URUBAMBA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "80",
+      "id_department": "8",
+      "description": "ACOBAMBA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "81",
+      "id_department": "8",
+      "description": "ANGARAES",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "82",
+      "id_department": "8",
+      "description": "CASTROVIRREYNA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "83",
+      "id_department": "8",
+      "description": "CHURCAMPA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "84",
+      "id_department": "8",
+      "description": "HUANCAVELICA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "85",
+      "id_department": "8",
+      "description": "HUAYTARA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "86",
+      "id_department": "8",
+      "description": "TAYACAJA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "87",
+      "id_department": "9",
+      "description": "AMBO",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "88",
+      "id_department": "9",
+      "description": "DOS DE MAYO",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "89",
+      "id_department": "9",
+      "description": "HUACAYBAMBA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "90",
+      "id_department": "9",
+      "description": "HUAMALIES",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "91",
+      "id_department": "9",
+      "description": "HUANUCO",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "92",
+      "id_department": "9",
+      "description": "LAURICOCHA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "93",
+      "id_department": "9",
+      "description": "LEONCIO PRADO",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "94",
+      "id_department": "9",
+      "description": "MARAÑON",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "95",
+      "id_department": "9",
+      "description": "PACHITEA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "96",
+      "id_department": "9",
+      "description": "PUERTO INCA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "97",
+      "id_department": "9",
+      "description": "YAROWILCA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "98",
+      "id_department": "10",
+      "description": "CHINCHA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "99",
+      "id_department": "10",
+      "description": "ICA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "100",
+      "id_department": "10",
+      "description": "NAZCA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "101",
+      "id_department": "10",
+      "description": "PALPA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "102",
+      "id_department": "10",
+      "description": "PISCO",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "103",
+      "id_department": "11",
+      "description": "CHANCHAMAYO",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "104",
+      "id_department": "11",
+      "description": "CHUPACA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "105",
+      "id_department": "11",
+      "description": "CONCEPCION",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "106",
+      "id_department": "11",
+      "description": "HUANCAYO",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "107",
+      "id_department": "11",
+      "description": "JAUJA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "108",
+      "id_department": "11",
+      "description": "JUNIN",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "109",
+      "id_department": "11",
+      "description": "SATIPO",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "110",
+      "id_department": "11",
+      "description": "TARMA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "111",
+      "id_department": "11",
+      "description": "YAULI",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "112",
+      "id_department": "12",
+      "description": "ASCOPE",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "113",
+      "id_department": "12",
+      "description": "BOLIVAR",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "114",
+      "id_department": "12",
+      "description": "CHEPEN",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "115",
+      "id_department": "12",
+      "description": "GRAN CHIMU",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "116",
+      "id_department": "12",
+      "description": "JULCAN",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "117",
+      "id_department": "12",
+      "description": "OTUZCO",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "118",
+      "id_department": "12",
+      "description": "PACASMAYO",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "119",
+      "id_department": "12",
+      "description": "PATAZ",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "120",
+      "id_department": "12",
+      "description": "SANCHEZ CARRION",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "121",
+      "id_department": "12",
+      "description": "SANTIAGO DE CHUCO",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "122",
+      "id_department": "12",
+      "description": "TRUJILLO",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "123",
+      "id_department": "12",
+      "description": "VIRU",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "124",
+      "id_department": "13",
+      "description": "CHICLAYO",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "125",
+      "id_department": "13",
+      "description": "FERREÑAFE",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "126",
+      "id_department": "13",
+      "description": "LAMBAYEQUE",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "127",
+      "id_department": "14",
+      "description": "BARRANCA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "128",
+      "id_department": "14",
+      "description": "CAJATAMBO",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "129",
+      "id_department": "14",
+      "description": "CALLAO",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "130",
+      "id_department": "14",
+      "description": "CANTA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "131",
+      "id_department": "14",
+      "description": "CAÑETE",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "132",
+      "id_department": "14",
+      "description": "HUARAL",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "133",
+      "id_department": "14",
+      "description": "HUAROCHIRI",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "134",
+      "id_department": "14",
+      "description": "HUAURA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "135",
+      "id_department": "14",
+      "description": "LIMA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "136",
+      "id_department": "14",
+      "description": "OYON",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "137",
+      "id_department": "14",
+      "description": "YAUYOS",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "138",
+      "id_department": "15",
+      "description": "ALTO AMAZONAS",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "139",
+      "id_department": "15",
+      "description": "LORETO",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "140",
+      "id_department": "15",
+      "description": "MARISCAL R.CASTILLA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "141",
+      "id_department": "15",
+      "description": "MAYNAS",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "142",
+      "id_department": "15",
+      "description": "REQUENA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "143",
+      "id_department": "15",
+      "description": "UCAYALI",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "144",
+      "id_department": "16",
+      "description": "MANU",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "145",
+      "id_department": "16",
+      "description": "TAHUAMANU",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "146",
+      "id_department": "16",
+      "description": "TAMBOPATA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "147",
+      "id_department": "17",
+      "description": "GENERAL SANCHEZ CERRO",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "148",
+      "id_department": "17",
+      "description": "ILO",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "149",
+      "id_department": "17",
+      "description": "MARISCAL NIETO",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "150",
+      "id_department": "18",
+      "description": "DANIEL ALCIDES CARRION",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "151",
+      "id_department": "18",
+      "description": "OXAPAMPA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "152",
+      "id_department": "18",
+      "description": "PASCO",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "153",
+      "id_department": "19",
+      "description": "AYABACA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "154",
+      "id_department": "19",
+      "description": "HUANCABAMBA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "155",
+      "id_department": "19",
+      "description": "MORROPON",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "156",
+      "id_department": "19",
+      "description": "PAITA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "157",
+      "id_department": "19",
+      "description": "PIURA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "158",
+      "id_department": "19",
+      "description": "SECHURA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "159",
+      "id_department": "19",
+      "description": "SULLANA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "160",
+      "id_department": "19",
+      "description": "TALARA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "161",
+      "id_department": "20",
+      "description": "AZANGARO",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "162",
+      "id_department": "20",
+      "description": "CARABAYA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "163",
+      "id_department": "20",
+      "description": "CHUCUITO",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "164",
+      "id_department": "20",
+      "description": "EL COLLAO",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "165",
+      "id_department": "20",
+      "description": "HUANCANE",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "166",
+      "id_department": "20",
+      "description": "LAMPA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "167",
+      "id_department": "20",
+      "description": "MELGAR",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "168",
+      "id_department": "20",
+      "description": "MOHO",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "169",
+      "id_department": "20",
+      "description": "PUNO",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "170",
+      "id_department": "20",
+      "description": "SAN ANTONIO DE PUTINA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "171",
+      "id_department": "20",
+      "description": "SAN ROMAN",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "172",
+      "id_department": "20",
+      "description": "SANDIA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "173",
+      "id_department": "20",
+      "description": "YUNGUYO",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "174",
+      "id_department": "21",
+      "description": "BELLAVISTA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "175",
+      "id_department": "21",
+      "description": "EL DORADO",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "176",
+      "id_department": "21",
+      "description": "HUALLAGA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "177",
+      "id_department": "21",
+      "description": "LAMAS",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "178",
+      "id_department": "21",
+      "description": "MARISCAL CACERES",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "179",
+      "id_department": "21",
+      "description": "MOYOBAMBA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "180",
+      "id_department": "21",
+      "description": "PICOTA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "181",
+      "id_department": "21",
+      "description": "RIOJA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "182",
+      "id_department": "21",
+      "description": "SAN MARTIN",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "183",
+      "id_department": "21",
+      "description": "TOCACHE",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "184",
+      "id_department": "22",
+      "description": "CANDARAVE",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "185",
+      "id_department": "22",
+      "description": "JORGE BASADRE",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "186",
+      "id_department": "22",
+      "description": "TACNA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "187",
+      "id_department": "22",
+      "description": "TARATA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "188",
+      "id_department": "23",
+      "description": "CONTRALMIRANTE VILLAR",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "189",
+      "id_department": "23",
+      "description": "TUMBES",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "190",
+      "id_department": "23",
+      "description": "ZARUMILLA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "191",
+      "id_department": "24",
+      "description": "ATALAYA",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "192",
+      "id_department": "24",
+      "description": "CORONEL PORTILLO",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "193",
+      "id_department": "24",
+      "description": "PADRE ABAD",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "194",
+      "id_department": "24",
+      "description": "PURUS",
+      "state": "t",
+      "created_at": "2020-08-10 12:54:06-05:05",
+      "updated_at": "2020-08-10 12:54:06-05:05",
+      "deleted_at": null
+    }
+  ]
+}

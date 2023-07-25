@@ -1,0 +1,14 @@
+'use strict';
+//////////////////////////////////SECURITY////////////////////////////////////////
+//////////////////////////////////SECURITY////////////////////////////////////////
+//////////////////////////////////SECURITY////////////////////////////////////////
+
+const UserIntranetController = require('./intranet/user_intranet');
+const ProjectController = require('./intranet/project');
+/*******************************************************************************/
+
+module.exports = {
+
+    UserIntranetController,
+    ProjectController,
+};

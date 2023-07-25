@@ -1,0 +1,54 @@
+{
+  "dev": {
+    "username": "postgres",
+    "password": "12345",
+    "database": "sefcs_22072023",
+    "host": "localhost",
+    "port": 5432,
+    "dialect": "postgres",
+    "define": {
+      "paranoid": true,
+      "underscored": true,
+      "freezeTableName": true
+    }
+  },
+  "test": {
+    "username": "postgres",
+    "password": "You|reNotAlOnE#@lA15f[*_*]12?",
+    "database": "SETEST",
+    "host": "192.168.50.10",
+    "port": 5432,
+    "dialect": "postgres",
+    "define": {
+      "paranoid": true,
+      "underscored": true,
+      "freezeTableName": true
+    }
+  },
+  "pro": {
+    "username": "postgres",
+    "password": "12345",
+    "database": "db_se27062023",
+    "host": "localhost",
+    "port": 5432,
+    "dialect": "postgres",
+    "define": {
+      "paranoid": true,
+      "underscored": true,
+      "freezeTableName": true
+    }
+  },
+  "proAnt": {
+    "username": "postgres",
+    "password": "You|reNotAlOnE#@lA15f[*_*]12?",
+    "database": "SEPRO",
+    "host": "192.168.50.10",
+    "port": 5432,
+    "dialect": "postgres",
+    "define": {
+      "paranoid": true,
+      "underscored": true,
+      "freezeTableName": true
+    }
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "RECORDS": [
+    {
+      "id": "1",
+      "id_country": "89",
+      "description": "AMAZONAS",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:46-05:05",
+      "updated_at": "2020-08-10 12:53:46-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "2",
+      "id_country": "89",
+      "description": "ANCASH",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:46-05:05",
+      "updated_at": "2020-08-10 12:53:46-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "3",
+      "id_country": "89",
+      "description": "APURIMAC",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:46-05:05",
+      "updated_at": "2020-08-10 12:53:46-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "4",
+      "id_country": "89",
+      "description": "AREQUIPA",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:46-05:05",
+      "updated_at": "2020-08-10 12:53:46-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "5",
+      "id_country": "89",
+      "description": "AYACUCHO",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:46-05:05",
+      "updated_at": "2020-08-10 12:53:46-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "6",
+      "id_country": "89",
+      "description": "CAJAMARCA",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:46-05:05",
+      "updated_at": "2020-08-10 12:53:46-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "7",
+      "id_country": "89",
+      "description": "CUSCO",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:46-05:05",
+      "updated_at": "2020-08-10 12:53:46-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "8",
+      "id_country": "89",
+      "description": "HUANCAVELICA",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:46-05:05",
+      "updated_at": "2020-08-10 12:53:46-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "9",
+      "id_country": "89",
+      "description": "HUANUCO",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:46-05:05",
+      "updated_at": "2020-08-10 12:53:46-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "10",
+      "id_country": "89",
+      "description": "ICA",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:46-05:05",
+      "updated_at": "2020-08-10 12:53:46-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "11",
+      "id_country": "89",
+      "description": "JUNIN",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:46-05:05",
+      "updated_at": "2020-08-10 12:53:46-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "12",
+      "id_country": "89",
+      "description": "LA LIBERTAD",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:46-05:05",
+      "updated_at": "2020-08-10 12:53:46-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "13",
+      "id_country": "89",
+      "description": "LAMBAYEQUE",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:46-05:05",
+      "updated_at": "2020-08-10 12:53:46-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "14",
+      "id_country": "89",
+      "description": "LIMA",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:46-05:05",
+      "updated_at": "2020-08-10 12:53:46-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "15",
+      "id_country": "89",
+      "description": "LORETO",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:46-05:05",
+      "updated_at": "2020-08-10 12:53:46-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "16",
+      "id_country": "89",
+      "description": "MADRE DE DIOS",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:46-05:05",
+      "updated_at": "2020-08-10 12:53:46-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "17",
+      "id_country": "89",
+      "description": "MOQUEGUA",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:46-05:05",
+      "updated_at": "2020-08-10 12:53:46-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "18",
+      "id_country": "89",
+      "description": "PASCO",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:46-05:05",
+      "updated_at": "2020-08-10 12:53:46-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "19",
+      "id_country": "89",
+      "description": "PIURA",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:46-05:05",
+      "updated_at": "2020-08-10 12:53:46-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "20",
+      "id_country": "89",
+      "description": "PUNO",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:46-05:05",
+      "updated_at": "2020-08-10 12:53:46-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "21",
+      "id_country": "89",
+      "description": "SAN MARTIN",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:46-05:05",
+      "updated_at": "2020-08-10 12:53:46-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "22",
+      "id_country": "89",
+      "description": "TACNA",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:46-05:05",
+      "updated_at": "2020-08-10 12:53:46-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "23",
+      "id_country": "89",
+      "description": "TUMBES",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:46-05:05",
+      "updated_at": "2020-08-10 12:53:46-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "24",
+      "id_country": "89",
+      "description": "UCAYALI",
+      "state": "t",
+      "created_at": "2020-08-10 12:53:46-05:05",
+      "updated_at": "2020-08-10 12:53:46-05:05",
+      "deleted_at": null
+    }
+  ]
+}

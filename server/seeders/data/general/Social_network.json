@@ -1,0 +1,31 @@
+{
+  "RECORDS": [
+    {
+      "id": "1",
+      "denomination": "FACEBOOK",
+      "link": "facebook/",
+      "state": "t",
+      "created_at": "2020-08-25 15:02:53-05:05",
+      "updated_at": "2020-08-25 15:02:55-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "2",
+      "denomination": "INSTAGRAM",
+      "link": "instagram/",
+      "state": "t",
+      "created_at": "2020-08-25 15:02:53-05:05",
+      "updated_at": "2020-08-25 15:02:55-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "3",
+      "denomination": "TWITTER",
+      "link": "twitter/",
+      "state": "t",
+      "created_at": "2020-08-25 15:02:53-05:05",
+      "updated_at": "2020-08-25 15:02:55-05:05",
+      "deleted_at": null
+    }
+  ]
+}

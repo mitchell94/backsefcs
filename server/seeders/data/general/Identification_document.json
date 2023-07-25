@@ -1,0 +1,67 @@
+{
+  "RECORDS": [
+    {
+      "id": "1",
+      "denomination": "Documento Nacional de Identidad",
+      "abbreviation": "DNI",
+      "state": "t",
+      "created_at": "2021-02-25 01:12:01-05:05",
+      "updated_at": "2021-02-25 01:12:01-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "2",
+      "denomination": "Pasaporte",
+      "abbreviation": "PAST",
+      "state": "t",
+      "created_at": "2021-02-25 01:12:01-05:05",
+      "updated_at": "2021-02-25 01:12:01-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "3",
+      "denomination": "Carné de Extranjería",
+      "abbreviation": "CE",
+      "state": "t",
+      "created_at": "2021-02-25 01:12:01-05:05",
+      "updated_at": "2021-02-25 01:12:01-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "5",
+      "denomination": "Documento Extranjero - Otros",
+      "abbreviation": "OTROS",
+      "state": "t",
+      "created_at": "2021-02-25 01:12:01-05:05",
+      "updated_at": "2021-02-25 01:12:01-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "6",
+      "denomination": "Permiso Temporal de Permanencia",
+      "abbreviation": "PTP",
+      "state": "t",
+      "created_at": "2021-02-25 01:12:01-05:05",
+      "updated_at": "2021-02-25 01:12:01-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "7",
+      "denomination": "Carné de Identidad",
+      "abbreviation": "CARN.I",
+      "state": "t",
+      "created_at": "2021-02-25 01:12:01-05:05",
+      "updated_at": "2021-02-25 01:12:01-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "4",
+      "denomination": "Cédula de identidad",
+      "abbreviation": "CED.I",
+      "state": "t",
+      "created_at": "2021-02-25 01:12:01-05:05",
+      "updated_at": "2021-02-25 01:12:01-05:05",
+      "deleted_at": null
+    }
+  ]
+}

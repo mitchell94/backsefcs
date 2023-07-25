@@ -1,0 +1,37 @@
+{
+  "RECORDS": [
+    {
+      "id": "1",
+      "id_district": "1772",
+      "code": "S",
+      "denomination": "Tarapoto",
+      "type": "Matrix",
+      "state": "t",
+      "created_at": "2020-08-25 15:02:53-05:05",
+      "updated_at": "2020-08-25 15:02:55-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "3",
+      "id_district": "1737",
+      "code": "F01",
+      "denomination": "Moyobamba",
+      "type": "Subsidiary",
+      "state": "t",
+      "created_at": "2020-08-25 15:02:53-05:05",
+      "updated_at": "2020-08-25 15:02:55-05:05",
+      "deleted_at": null
+    },
+    {
+      "id": "2",
+      "id_district": "1755",
+      "code": "F02",
+      "denomination": "Rioja",
+      "type": "Subsidiary",
+      "state": "t",
+      "created_at": "2020-08-25 15:02:53-05:05",
+      "updated_at": "2020-08-25 15:02:55-05:05",
+      "deleted_at": null
+    }
+  ]
+}
