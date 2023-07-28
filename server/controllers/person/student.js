@@ -39,8 +39,6 @@ const Academic_calendar = require("../../models").Academic_calendar;
 const Student_discount = require("../../models").Student_discount;
 const URL_PLUBLIC = require("../Abox").URL_PLUBLIC;
 const url_person_voucher = URL_PLUBLIC + "person/voucher/";
-// MPT
-const Plan = require("../../models").Plan;
 module.exports = {
   // =>PERSONA=>MATRICULAS  REGISTRA EL ID_USARIO Y ID_MENCION UNIDADORAGANICA Y GENERA LAS MENSUALIDADES DEL ESTUDIANTE
   create: async (req, res) => {
@@ -440,13 +438,6 @@ module.exports = {
                 },
               },
             ],
-          },
-
-          // Agregado MPT
-          {
-            attributes: ["id", "code"],
-            model: Plan,
-            as: "Plan",
           },
         ],
         order: [["created_at", "desc"]],

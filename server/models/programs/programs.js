@@ -10,6 +10,7 @@ module.exports = (sequelize, DataTypes) => {
         description: {allowNull: true, type: DataTypes.TEXT},
         mesh: {allowNull: false, type: DataTypes.BOOLEAN, defaultValue: false},
         state: {allowNull: false, type: DataTypes.BOOLEAN, defaultValue: true},
+        abbreviation: {allowNull: false, type: DataTypes.STRING}
     }, {
         timestamps: true,
         createdAt: 'created_at',
