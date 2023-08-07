@@ -61,6 +61,9 @@ person.patch('/student/:id', verifyToken, StudentController.updateStudentProgram
 person.patch('/student/state/:id', verifyToken, StudentController.updateStateStudentProgram);
 person.patch('/student/observation-update/:id', verifyToken, StudentController.updateObservationStudent);
 person.delete('/student/:id', verifyToken, StudentController.destroyStudent);
+// MPT
+person.post('/student/change-program', verifyToken, StudentController.changeStudentProgram);
+// MPT END
 
 person.get('/student/:id_student/document', verifyToken, StudentController.listDocumentStudentByStudentID);
 person.get('/student/program/admission-plan/:id_admission_plan', StudentController.listStudentAdmissionProgram);
