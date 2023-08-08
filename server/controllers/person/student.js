@@ -571,6 +571,34 @@ module.exports = {
                     },
                     { transaction: t }
                 );
+
+                // ESTUDIANTE PROGRAMA ANTERIOR
+                let lastStudentProgram = await Student.findOne(
+                    {
+                        where: {
+                            id_program: req.body.id_last_program,
+                            id_person: req.body.id_person,
+                        },
+                    },
+                    { transaction: t }
+                );
+
+                // -----------------------------------------------
+                //  MOVIMIENTOS REGISTRADOS (PAGOS) PROGRAMA ANTERIOR
+                let lastProgramMovements = await Movement.findAll({
+                    where: {
+                        id_program: lastStudentProgram.id_program,
+                        id_student: lastStudentProgram.id,
+                    },
+                });
+
+                // MONTO TOTAl MOVIMIENTOS REGISTRADOS
+                let totalMovements = await lastProgramMovements.reduce(
+                    (total, m) => total + parseFloat(m.voucher_amount),
+                    0
+                );
+
+                // REGISTRAR MOVIEMIENTO RESUMEN
                 let maxMovementId = await Movement.max(
                     "id",
                     { paranoid: false },
@@ -582,24 +610,50 @@ module.exports = {
                         id_student: studentData.id,
                         id_program: studentData.id_program,
                         id_organic_unit: studentData.id_organic_unit,
-                        id_user: req.body.id_user,
-                        denomination: req.body.denomination,
-                        voucher_code: req.body.voucher_code,
-                        voucher_amount: 0,
+                        // id_user: "",
+                        denomination: "Resumen Programa Anterior",
+                        voucher_code: "",
+                        voucher_amount: totalMovements,
                         voucher_date: moment().format("YYYY-MM-DD"),
-                        // voucher_url: archive,
+                        voucher_url: "",
                         observation: "PAGOS PROGRAMA ANTERIOR",
-                        type: req.body.type,
-                        state: req.body.state,
+                        type: "Transferencia",
+                        state: "Regularizado",
                     },
                     { transaction: t }
                 );
-                //
 
-                //CREATE PAYMENT
-                let costAdmissionPlan = await Cost_admission_plan.findByPk(
-                    req.body.id_cost_admission
+                // // ESTUDIANTE PROGRAMA ANTERIOR
+                // let lastStudentProgram = await Student.findOne(
+                //     {
+                //         where: {
+                //             id_program: req.body.id_last_program,
+                //             id_person: req.body.id_person,
+                //         },
+                //     },
+                //     { transaction: t }
+                // );
+                // -----------------------------------------------
+                // CONCEPTOS DE PAGO ESTUDIANTE PROGRAMA ANTERIOR
+                let lastProgramPayments = await Payment.findAll({
+                    where: {
+                        id_program: lastStudentProgram.id_program,
+                        id_student: lastStudentProgram.id,
+                    },
+                });
+
+                // CONCEPTOS CON TIPO PAGADO
+                let paidPayments = await lastProgramPayments.filter(
+                    (p) => p.type == "Pagado"
                 );
+
+                // MONTO TOTAL CONCEPTOS PAGADOS
+                let totalPaidPayments = await paidPayments.reduce(
+                    (total, p) => total + parseFloat(p.amount),
+                    0
+                );
+
+                //CREATE PAYMENT DE RESUMEN DE CONCEPTOS ANTERIORES
                 let maxPayment = await Payment.max(
                     "id",
                     { paranoid: false },
@@ -609,20 +663,49 @@ module.exports = {
                     {
                         id: maxPayment + 1,
                         id_student: studentData.id,
-                        id_organic_unit: req.body.id_organic_unit,
-                        id_program: req.body.id_program,
-                        id_cost_admission: costAdmissionPlan.id,
-                        id_concept: req.body.id_concept,
-                        id_semester: req.body.id_process,
-                        amount: costAdmissionPlan.amount,
-                        payment_date: req.body.payment_date,
-                        denomination: "Inscripción",
+                        id_organic_unit: studentData.id_organic_unit,
+                        id_program: studentData.id_program,
+                        id_cost_admission: studentData.id_cost_admission,
+                        id_concept: 127,
+                        id_semester: req.body.id_semester,
+                        amount: totalPaidPayments,
+                        // payment_date: moment().format("YYYY-MM-DD"),
+                        payment_date: "",
+                        denomination: "Traslado USE",
                         order_number: 1,
                         generate: 0, //0 por que no se genera documentos con este concepto
-                        type: "Pendiente",
+                        type: "Pagado",
                     },
                     { transaction: t }
                 );
+
+                // let conceptTraslado = await Concept.findByPk(126);
+                // let uit = await Uit.findOne({ where: { state: true } });
+                // let amountTraslado = Math.round(
+                //     (uit.amount * conceptTraslado.percent) / 100
+                // );
+                // let maxPaymentTraslado = await Payment.max(
+                //     "id",
+                //     { paranoid: false },
+                //     { transaction: t }
+                // );
+                // await Payment.create(
+                //     {
+                //         id: maxPaymentTraslado + 1,
+                //         id_student: studentData.id,
+                //         id_organic_unit: req.body.id_organic_unit,
+                //         id_program: req.body.id_program,
+                //         id_concept: 126,
+                //         id_semester: req.body.id_process,
+                //         amount: amountTraslado,
+                //         // payment_date: req.body.payment_date,
+                //         denomination: "Traslado",
+                //         order_number: 1,
+                //         generate: 0, //0 por que no se genera documentos con este concepto
+                //         type: "Pendiente",
+                //     },
+                //     { transaction: t }
+                // );
             });
             res.status(200).send({ message: message.REGISTERED_OK });
         } catch (err) {
@@ -632,33 +715,6 @@ module.exports = {
                 error: err,
             });
         }
-        let conceptTraslado = await Concept.findByPk(126);
-        let uit = await Uit.findOne({ where: { state: true } });
-        let amountTraslado = Math.round(
-            (uit.amount * conceptTraslado.percent) / 100
-        );
-        let maxPaymentTraslado = await Payment.max(
-            "id",
-            { paranoid: false },
-            { transaction: t }
-        );
-        await Payment.create(
-            {
-                id: maxPaymentTraslado + 1,
-                id_student: studentData.id,
-                id_organic_unit: req.body.id_organic_unit,
-                id_program: req.body.id_program,
-                id_concept: 126,
-                id_semester: req.body.id_process,
-                amount: amountTraslado,
-                // payment_date: req.body.payment_date,
-                denomination: "Traslado",
-                order_number: 1,
-                generate: 0, //0 por que no se genera documentos con este concepto
-                type: "Pendiente",
-            },
-            { transaction: t }
-        );
     },
     // MPT END
 
