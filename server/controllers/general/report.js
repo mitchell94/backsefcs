@@ -3501,10 +3501,7 @@ reportDataMovementStudentByRangeDateRegistrationVoucher: async (req, res) => {
                 });
                 let y = 0;
                 for (let i = 0; i < registration.length; i++) {
-
                     for (let j = 0; j < registration[i].Registration_course.length; j++) {
-
-
                         y = y + 1;
                         let tempSchedule = await Schedule.create({
                             "id": y,
@@ -3522,13 +3519,9 @@ reportDataMovementStudentByRangeDateRegistrationVoucher: async (req, res) => {
                         }, {transaction: t});
                         newSchedule.push(tempSchedule)
                     }
-
-
                 }
                 await Promise.all(newSchedule)
-
                 res.status(200).send(newSchedule);
-
             })
 
 

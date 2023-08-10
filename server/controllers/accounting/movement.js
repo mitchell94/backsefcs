@@ -191,6 +191,9 @@ module.exports = {
                 await movementTemp.update({
                     denomination: req.body.denomination,
                     voucher_amount: req.body.voucher_amount,
+                    // MPT
+                    voucher_code: req.body.voucher_code,
+                    // MPT END
                     voucher_date: req.body.voucher_date,
                     voucher_url: archive !== '' ? archive : movementTemp.voucher_url,
                     observation: req.body.observation,

@@ -672,15 +672,16 @@ module.exports = {
                         denomination: lastProgram.abbreviation,
                         order_number: 1,
                         generate: 0, //0 por que no se genera documentos con este concepto
-                        type: "Pendiente",
+                        type: "Pagado",
                     },
                     { transaction: t }
                 );
 
-                // -------------------------------------------------------
-                // INCRIPCION PROGRAMA ACTUAL
-                let costAdmissionPlan = await Cost_admission_plan.findByPk(
-                    req.body.id_cost_admission
+                // CREATE PAYMENT PAGO POR CAMBIO DE ESPECIALIDAD
+                let conceptTraslado = await Concept.findByPk(126);
+                let uit = await Uit.findOne({ where: { state: true } });
+                let amountTraslado = Math.round(
+                    (uit.amount * conceptTraslado.percent) / 100
                 );
                 await Payment.create(
                     {
@@ -688,12 +689,12 @@ module.exports = {
                         id_student: studentData.id,
                         id_organic_unit: studentData.id_organic_unit,
                         id_program: studentData.id_program,
-                        id_cost_admission: costAdmissionPlan.id,
-                        id_concept: 81,
+                        id_cost_admission: studentData.id_cost_admission,
+                        id_concept: 126,
                         id_semester: req.body.id_semester,
-                        amount: costAdmissionPlan.amount,
-                        payment_date: "",
-                        denomination: "Inscripción",
+                        amount: amountTraslado,
+                        payment_date: moment().format("YYYY-MM-DD"),
+                        denomination: "Traslado USE",
                         order_number: 2,
                         generate: 0, //0 por que no se genera documentos con este concepto
                         type: "Pendiente",
@@ -701,14 +702,259 @@ module.exports = {
                     { transaction: t }
                 );
 
-                // FINALMENTE ACTUALIZAR EL ESTADO DEL ESUDIANTE ANTIGUO
-                await lastStudentProgram.update(
-                    {
-                        type: "Trasladado",
-                        observation: "Cambiado de programa"
-                    },
-                    { transaction: t }
-                );
+                // -------------------------------------------------------
+                // NUEVOS CONCEPTOS DE PAGO PROGRAMA ACTUAL - PENDIENTES
+
+                // COSTO DE PENSION PROGRAMA ACTUAL
+                // let pensionCost = await Cost_admission_plan.findOne(
+                //     {
+                //         where: {
+                //             id_admission_plan: studentData.id_admission_plan,
+                //         },
+                //         include: {
+                //             attributes: ["denomination"],
+                //             where: {
+                //                 denomination: {
+                //                     [Op.like]: "%" + "Pensión " + "%",
+                //                 },
+                //             },
+                //             model: Concept,
+                //             as: "Concept",
+                //         },
+                //     },
+                //     { transaction: t }
+                // );
+
+                // PAYMENTS CON ESTADO PENDIENTE DEL PROGRAMA ANTERIOR
+                // let pendingPayments = await lastProgramPayments.filter(
+                //     (p) => p.type == "Pendiente"
+                // );
+
+                // --------------------------------------------------------
+                // NUEVOS PAYMENTS CON ESTADO PENDIENTE DEL PROGRAMA ACTUAL
+                for (const lpp of lastProgramPayments) {
+                    // REGISTRARÁ DEPENDIENDO DE LA DENOMINATION
+                    if (lpp.denomination === "Matrícula") {
+                        let maxRegistration = await Registration.max(
+                            "id",
+                            { paranoid: false },
+                            { transaction: t }
+                        );
+                        let registration = await Registration.create(
+                            {
+                                id: maxRegistration + 1,
+                                id_semester: req.body.id_semester,
+                                id_student: studentData.id,
+                                type: "Regular",
+                                id_program: studentData.id_program,
+                                id_organic_unit: studentData.id_organic_unit,
+                                // observation: null,
+                                state: "Pendiente",
+                            },
+                            { transaction: t }
+                        );
+                        // CODIGO RESPECTO A LA MATRICULA Y SU PAGO
+                        // ---------------------------------------------
+                        if (lpp.type == "Pagado") {
+                            // SI LA MATRICULA YA HA SIDO PAGADA ENTONCES YA NO SE CREA EL PAYMENT
+                            await Registration.update(
+                                {
+                                    state: "Pagado",
+                                },
+                                {
+                                    where: {
+                                        id: registration.id,
+                                    },
+                                    transaction: t,
+                                }
+                            );
+                        } else {
+                            // CONSULTAMOS COSTO DE MATRICULA
+                            let registrationCost =
+                                await Cost_admission_plan.findOne(
+                                    {
+                                        where: {
+                                            id_admission_plan:
+                                                studentData.id_admission_plan,
+                                        },
+                                        include: {
+                                            attributes: ["denomination"],
+                                            where: {
+                                                denomination: {
+                                                    [Op.like]:
+                                                        "%" +
+                                                        "Matrícula " +
+                                                        "%",
+                                                },
+                                            },
+                                            model: Concept,
+                                            as: "Concept",
+                                        },
+                                    },
+                                    { transaction: t }
+                                );
+
+                            // SI LA MATRICULA NO HA SIDO PAGADA ENTONCES SE CREA UN PAYMENT
+                            let maxPaymentCp = await Payment.max(
+                                "id",
+                                { paranoid: false },
+                                { transaction: t }
+                            );
+                            await Payment.create(
+                                {
+                                    id: maxPaymentCp + 1,
+                                    id_student: studentData.id,
+                                    id_organic_unit:
+                                        studentData.id_organic_unit,
+                                    id_program: studentData.id_program,
+                                    id_concept: lpp.id_concept,
+                                    id_semester: req.body.id_semester,
+                                    id_registration: registration.id,
+                                    amount: registrationCost,
+                                    denomination: "Matrícula",
+                                    generate: 0, //0 por que no se genera documentos con este concepto
+                                    type: "Pendiente",
+                                },
+                                { transaction: t }
+                            );
+                        }
+
+                        // CODIGO RESPECTO A LA MATRICULA Y LOS CURSOS
+                        // ----------------------------------------------
+                        let getPlan = await Plan.findOne(
+                            {
+                                where: {
+                                    id_program: studentData.id_program,
+                                    state: "t",
+                                },
+                            },
+                            { transaction: t }
+                        );
+                        let getCiclo = await Ciclo.findOne(
+                            {
+                                where: {
+                                    ciclo: "I",
+                                    state: "t",
+                                    id_plan: getPlan.id,
+                                },
+                            },
+                            { transaction: t }
+                        );
+
+                        // let listCourses = await Course.findAll(
+                        //     {
+                        //         where: {
+                        //             id_ciclo: getCiclo.id,
+                        //             state: "t",
+                        //         },
+                        //     },
+                        //     { transaction: t }
+                        // );
+
+                        let ciclo = await Schedule.findAll(
+                            {
+                                where: {
+                                    id_process: req.body.id_semester,
+                                    type_registration: "R",
+                                },
+                                include: [
+                                    {
+                                        where: { id_ciclo: getCiclo.id },
+                                        required: true,
+                                        model: Course,
+                                        as: "Course",
+                                        // include: {
+                                        //     required: true,
+                                        //     where: { id_plan: req.body.id_plan },
+                                        //     attributes: ["id", "ciclo", "period"],
+                                        //     model: Ciclo,
+                                        //     as: "Ciclo",
+                                        // },
+                                    },
+                                ],
+                                order: [
+                                    [
+                                        { model: Course, as: "Course" },
+                                        "order",
+                                        "asc",
+                                    ],
+                                ],
+                            },
+                            { transaction: t }
+                        );
+
+                        let listCourses = [];
+                        ciclo.map((r) =>
+                            listCourses.push({
+                                id: r.id_course,
+                                id_schedule: r.id,
+                                // ciclo: r.Course.Ciclo.ciclo,
+                                // abbreviation: r.Course.abbreviation,
+                                // area: r.Course.area,
+                                // code: r.Course.code,
+                                // order: r.Course.order,
+                                // credits: r.Course.credits,
+                                // practical_hours: r.Course.practical_hours,
+                                // hours: r.Course.hours,
+                                // requirements: JSON.parse(r.Course.requirements),
+                                // type: r.Course.type,
+                                // note: 0,
+                                // note_state: false,
+                                // denomination: r.Course.denomination,
+                                // state: false,
+                                // group: r.group_class,
+                                // teachers:
+                                //     r.Teachers.length > 0 ? r.Teachers : [],
+                            })
+                        );
+
+                        for (let i = 0; i < listCourses.length; i++) {
+                            let maxRegistrationCourseID =
+                                await Registration_course.max(
+                                    "id",
+                                    { paranoid: false },
+                                    { transaction: t }
+                                );
+                            await Registration_course.create(
+                                {
+                                    id: maxRegistrationCourseID + 1 + i,
+                                    id_registration: registration.id,
+                                    id_schedule: listCourses[i].id_schedule,
+                                    id_course: listCourses[i].id,
+                                    type_course: "R",
+                                    note: 0,
+                                    state: "Desaprobado",
+                                },
+                                { transaction: t }
+                            );
+                        }
+
+                        // let maxPay = await Payment.max(
+                        //     "id",
+                        //     { paranoid: false },
+                        //     { transaction: t }
+                        // );
+                        // await Payment.create(
+                        //     {
+                        //         id: maxPay + 1,
+                        //         id_student: studentData.id,
+                        //         id_organic_unit: studentData.id_organic_unit,
+                        //         id_program: studentData.id_program,
+                        //         id_cost_admission: studentData.id_cost_admission,
+                        //         id_concept: p.id_concept,
+                        //         id_semester: req.body.id_semester,
+                        //         amount: totalPaidPayments,
+                        //         // payment_date: moment().format("YYYY-MM-DD"),
+                        //         payment_date: "",
+                        //         denomination: lastProgram.abbreviation,
+                        //         order_number: 1,
+                        //         generate: 0, //0 por que no se genera documentos con este concepto
+                        //         type: "Pagado",
+                        //     },
+                        //     { transaction: t }
+                        // );
+                    }
+                }
             });
             // console.log(lastProgramPayments);
             res.status(200).send({ message: message.REGISTERED_OK });
