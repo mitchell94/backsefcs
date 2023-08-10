@@ -747,6 +747,9 @@ module.exports = {
                         where: {
                             id_program: req.body.id_program,
                             id_person: req.body.id_person,
+                            type: {
+                                [Op.not]: ["Desertado", "Abandonado"],
+                            },
                         },
                     },
                     { transaction: t }
