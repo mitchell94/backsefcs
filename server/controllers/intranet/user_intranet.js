@@ -1025,7 +1025,7 @@ module.exports = {
                 id = [1, 18, 117, 120, 119, 47, 37, 86, 6, 121, 12, 53, 57,17]
             } else if (program.Program.id_academic_degree == 5) {
                 type = 'Especialista'
-                id = [3, 115, 102,113, 49, 39, 86, 98, 6, 122, 108, 107, 106,17,110,126]
+                id = [115, 102,113, 39, 86, 98, 6, 122, 108, 107, 106,17,110,126,116,128,109]
             }
 
             let actualUit = await Uit.findOne({where: {state: true}});

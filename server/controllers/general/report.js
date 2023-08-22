@@ -1986,7 +1986,10 @@ module.exports = {
                 ],
             });
 
-            correlative = documentBook.correlative + '-' + moment(documentBook.created_at).year();
+            correlative =
+                documentBook.correlative +
+                "-" +
+                moment(documentBook.created_at).year();
             // correlative = "NNNN";
             date = moment(documentBook.created_at).format("LL");
             res.status(200).send({
@@ -2248,10 +2251,6 @@ module.exports = {
             lastRegister = moment.max(tempDatesEnd).format("DD-MM-YYYY");
             firtsRegister = moment.min(tempDates).format("DD-MM-YYYY");
 
-            // MPT 
-            // lastRegister = 
-            // MPT END
-
             res.status(200).send({
                 principalOrganicUnit,
                 authorityTypeG,
@@ -2260,7 +2259,7 @@ module.exports = {
                 date,
                 firtsRegister,
                 lastRegister,
-                studentRegister
+                studentRegister,
             });
         } catch (err) {
             console.log(err);
@@ -2841,7 +2840,7 @@ module.exports = {
                 ],
             });
 
-            registrationData = await Registration.findAll({
+            let registrationData = await Registration.findAll({
                 attributes: [
                     "id",
                     "id_semester",
@@ -2883,6 +2882,7 @@ module.exports = {
                                 "credits",
                                 "type",
                                 "state",
+                                "code",
                             ],
                             model: Course,
                             as: "Course",
@@ -2969,6 +2969,8 @@ module.exports = {
                                 .id_schedule,
                         note: registrationData[i].Registration_course[j].note,
                         type: registrationData[i].Registration_course[j].state,
+                        // MPT
+                        code: registrationData[i].Registration_course[j].Course.code,
                     });
                 }
             }
@@ -3132,6 +3134,14 @@ module.exports = {
                         attributes: ["denomination", "type", "credits"],
                         model: Course,
                         as: "Course",
+                        include: [
+                            {
+                                required: true,
+                                attributes: ["ciclo"],
+                                model: Ciclo,
+                                as: "Ciclo",
+                            },
+                        ],
                     },
                     {
                         required: true,
@@ -3276,6 +3286,8 @@ module.exports = {
                 totalStudent,
                 approvedStudent,
                 desaprovedStudent,
+                // MPT
+                ciclo: acta.Course.Ciclo.ciclo,
             };
             res.status(200).send(data);
         } catch (err) {
