@@ -2,7 +2,6 @@ const express = require('express');
 const intranet = express.Router();
 const verifyToken = require('../middlewares/auth');
 
-
 const UserIntranetController = require('../controllers/intranet').UserIntranetController;
 const ProjectController = require('../controllers/intranet').ProjectController;
 
@@ -11,13 +10,12 @@ intranet.get('/student-program', verifyToken, UserIntranetController.listStudent
 intranet.get('/person/profile', verifyToken, UserIntranetController.retrivePersonProfileIntranet);
 intranet.get('/administrative-info',verifyToken, UserIntranetController.retriveDataAdministrativeIntranet);
 intranet.get('/document-solicited',verifyToken, UserIntranetController.retriveDataDocumentSolicited);
-intranet.get('/student-payment/:id_student', verifyToken, UserIntranetController.listStudentPaymentIntranet);
-intranet.get('/student-movement/:id_student', verifyToken, UserIntranetController.listStudentMovementIntranet);
-intranet.get('/student-movement/:id_student', verifyToken, UserIntranetController.listStudentMovementIntranet);
+intranet.get('/student-payment', verifyToken, UserIntranetController.listStudentPaymentIntranet);
+// intranet.get('/student-payment/:id_student', verifyToken, UserIntranetController.listStudentPaymentIntranet);
+intranet.get('/student-movement', verifyToken, UserIntranetController.listStudentMovementIntranet);
+// intranet.get('/student-movement/:id_student', verifyToken, UserIntranetController.listStudentMovementIntranet);
 intranet.get('/student-requeriment/:id_student', verifyToken, UserIntranetController.listStudentRequeriment);
 intranet.post('/student-movement', verifyToken, UserIntranetController.createMovementIntranet);
-
-
 //TEACHER
 intranet.get('/teacher-schedule', verifyToken, UserIntranetController.listTeacherScheduleIntranet);
 intranet.get('/teacher-schedule/admission-plan/:id_schedule', verifyToken, UserIntranetController.listTeacherScheduleAdmissionPlan);
@@ -31,7 +29,6 @@ intranet.get('/student-procedure/:id', verifyToken, UserIntranetController.listP
 
 intranet.post('/student-procedure', verifyToken,UserIntranetController.createProcedureStudentIntranet);
 intranet.post('/student-procedure/file', verifyToken, UserIntranetController.createComprobanteProcedureIntranet);
-//
 
 intranet.get('/teacher-project', verifyToken, ProjectController.listTeacherProject);
 intranet.get('/student-project', verifyToken, ProjectController.listStudentProject);
@@ -41,6 +38,8 @@ intranet.post('/teacher-project-round', verifyToken, ProjectController.createTea
 intranet.patch('/student-project-round', verifyToken, ProjectController.updateStudentProjectRound);
 //login
 intranet.post('/login', UserIntranetController.validUserIntranet);
-
+// MPT
+intranet.patch('/change-password', verifyToken, UserIntranetController.changePassword);
+intranet.get('/student-academic-record', verifyToken, UserIntranetController.reportAcademicRecord);
 
 module.exports = intranet;

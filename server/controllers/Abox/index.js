@@ -11,79 +11,79 @@ let publicFolder = "";
 let urlIntranet = config.urlIntranet;
 
 if (env === "dev") {
-  URL_PLUBLIC = "C:/Users/MITCHELL/Desktop/seunsm/public/";
-  SERVER = config.tempServer;
-  URL_LOG = `${appRoot}/server/logs/accessDev.log`;
-  URL_FINAL_LOG = `${appRoot}/server/logs/final-dev-log.json`;
+    URL_PLUBLIC = "C:/Users/MITCHELL/Desktop/seunsm/public/";
+    SERVER = config.tempServer;
+    URL_LOG = `${appRoot}/server/logs/accessDev.log`;
+    URL_FINAL_LOG = `${appRoot}/server/logs/final-dev-log.json`;
 }
 
 if (env === "test") {
-  if (config.SYSTEM === "SEFCSUNSM") {
-    // publicFolder = path.join(__dirname, '..', 'testseunsm/public');
-    publicFolder = "/usr/share/nginx/html/testseunsm/public/";
-  }
+    if (config.SYSTEM === "SEFCSUNSM") {
+        // publicFolder = path.join(__dirname, '..', 'testseunsm/public');
+        publicFolder = "/usr/share/nginx/html/testseunsm/public/";
+    }
 
-  URL_PLUBLIC = publicFolder;
-  SERVER = config.tempServer;
-  URL_LOG = `${appRoot}/server/logs/accessTest.log`;
-  URL_FINAL_LOG = `${appRoot}/server/logs/final-test-log.json`;
+    URL_PLUBLIC = publicFolder;
+    SERVER = config.tempServer;
+    URL_LOG = `${appRoot}/server/logs/accessTest.log`;
+    URL_FINAL_LOG = `${appRoot}/server/logs/final-test-log.json`;
 }
 
 if (env === "pro") {
-  if (config.SYSTEM === "SEFCSUNSM") {
-    //publicFolder = path.join(__dirname, '..', '/seunsm/public');
-    publicFolder = "/usr/share/nginx/html/seunsm/public/";
-  }
+    if (config.SYSTEM === "SEFCSUNSM") {
+        //publicFolder = path.join(__dirname, '..', '/seunsm/public');
+        publicFolder = "/usr/share/nginx/html/seunsm/public/";
+    }
 
-  URL_PLUBLIC = publicFolder;
-  SERVER = config.tempServer;
-  URL_LOG = `${appRoot}/server/logs/accessPro.log`;
-  URL_FINAL_LOG = `${appRoot}/server/logs/final-pro-log.json`;
+    URL_PLUBLIC = publicFolder;
+    SERVER = config.tempServer;
+    URL_LOG = `${appRoot}/server/logs/accessPro.log`;
+    URL_FINAL_LOG = `${appRoot}/server/logs/final-pro-log.json`;
 }
 
 ///////////////////////GENERATE CODEL/////////////////////////
 // this function generate code like codePayment: ["SEGAOV"]
 const generator = require("voucher-code-generator");
 let generateCode = async (length) => {
-  return generator.generate({
-    length: length,
-    count: 1,
-    charset: "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ",
-  });
+    return generator.generate({
+        length: length,
+        count: 1,
+        charset: "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+    });
 };
 ///////////////////////GENERATE JSON FILE/////////////////////////
 // this function generate code like codePayment: ["SEGAOV"]
 const fs = require("fs");
 const readline = require("readline");
 let generateJsonLog = async () => {
-  const lineReader = readline.createInterface({
-    input: fs.createReadStream(URL_LOG),
-  });
-  const realJSON = [];
-  lineReader.on("line", function (line) {
-    realJSON.push(JSON.parse(line));
-  });
-  lineReader.on("close", function () {
-    // final-log.json is the post-processed, valid JSON file
-    fs.writeFile(URL_FINAL_LOG, JSON.stringify(realJSON), "utf8", () => {
-      console.log("Done!");
+    const lineReader = readline.createInterface({
+        input: fs.createReadStream(URL_LOG),
     });
-  });
+    const realJSON = [];
+    lineReader.on("line", function (line) {
+        realJSON.push(JSON.parse(line));
+    });
+    lineReader.on("close", function () {
+        // final-log.json is the post-processed, valid JSON file
+        fs.writeFile(URL_FINAL_LOG, JSON.stringify(realJSON), "utf8", () => {
+            console.log("Done!");
+        });
+    });
 };
 
 ///////////////////////NODEMAILER SEND MAIL FOR INSCRIPTION POSGRADE/////////////////////////
 const nodemailer = require("nodemailer");
 
 let templateInscription = async (
-  name,
-  conceptMask,
-  conceptAmount,
-  programMask,
-  programID,
-  organicUnitMask,
-  codePayment
+    name,
+    conceptMask,
+    conceptAmount,
+    programMask,
+    programID,
+    organicUnitMask,
+    codePayment
 ) => {
-  let template = `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    let template = `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
         <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"
       xmlns:o="urn:schemas-microsoft-com:office:office" class="translated-ltr">
@@ -898,10 +898,10 @@ let templateInscription = async (
 </body>
 </html>
     `;
-  return template;
+    return template;
 };
 let templateValidPayment = async (name, user, pass) => {
-  let template = `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    let template = `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"
       xmlns:o="urn:schemas-microsoft-com:office:office" class="translated-ltr">
@@ -1479,10 +1479,10 @@ let templateValidPayment = async (name, user, pass) => {
 
 </body>
 </html>`;
-  return template;
+    return template;
 };
 let templateSendUserCredential = async (name, user, pass) => {
-  let template = `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    let template = `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"
       xmlns:o="urn:schemas-microsoft-com:office:office" class="translated-ltr">
@@ -1760,15 +1760,15 @@ let templateSendUserCredential = async (name, user, pass) => {
                                                     <tr>
                                                         <td class="pc-cta-text pc-fb-font"
                                                             style="vertical-align: top;font-family: 'Fira Sans', Helvetica, Arial, sans-serif;font-size: 17px;font-weight: 300;line-height: 1.56;color: #9B9B9B;text-align: justify;"
-                                                            valign="top" align="center">Hola <span style="
+                                                            valign="top" align="center">Obsta. <span style="
                                                                  color: black;
                                                                  font-weight: bold;
-                                                                 ">${name}</span>
-                                                            Bienvenido a nuestra Escuela de <span style="
+                                                                 ">${name}</span>,
+                                                            es un gusto darle la bienvenida a nuestro Programa de <span style="
                                                                  color: #009688;
                                                                  font-weight: bold;
-                                                                 "> SEGUNDA ESPECIALIDAD / SE - UNSM.</span>
-                                                            estas son sus credenciales
+                                                                 "> SEGUNDA ESPECIALIDAD / USE - FCS, UNSM.</span>
+                                                            A continuación, le proporcionamos sus credenciales.
                                                             <hr>
                                                         </td>
                                                     </tr>
@@ -1777,13 +1777,14 @@ let templateSendUserCredential = async (name, user, pass) => {
                                                             style="vertical-align: top; padding: 9px 0 9px  0; font-family: 'Fira Sans', Helvetica, Arial, sans-serif; font-size: 24px; font-weight: 700; line-height: 1.42; letter-spacing: -0.4px; color: #151515;"
                                                             valign="top"> Usuario : ${user} <br>
                                                             Contraseña : ${pass}
+                                                            <span style="color: red; display: block; margin-top: 20px;">*Recomendamos cambiar su contraseña</span>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td class="pc-fb-font"
                                                             style="vertical-align: top; font-family: 'Fira Sans', Helvetica, Arial, sans-serif; font-size: 17px; font-weight: 500; color: #40BE65;"
                                                             valign="top">
-                                                            <hr>Para continuar clic en el boton.
+                                                            <hr>Clic para continuar.
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -1837,166 +1838,166 @@ let templateSendUserCredential = async (name, user, pass) => {
 
 </body>
 </html>`;
-  return template;
+    return template;
 };
 let wrapedSendMail = async (mailOptions) => {
-  return new Promise((resolve, reject) => {
-    const transporter = nodemailer.createTransport({
-      service: "gmail",
-      auth: {
-        user: "soporte@unsm.edu.pe",
-        pass: "ljEmwBOg*IJF",
-      },
+    return new Promise((resolve, reject) => {
+        const transporter = nodemailer.createTransport({
+            service: "gmail",
+            auth: {
+                user: "mitper94@gmail.com",
+                pass: "cmmnlgswocieciiu",
+            },
+        });
+        transporter.sendMail(mailOptions, function (error, info) {
+            if (error) {
+                console.log("error is " + error);
+                resolve(false);
+            } else {
+                console.log("Email sent: " + info.response);
+                resolve(true);
+            }
+        });
     });
-    transporter.sendMail(mailOptions, function (error, info) {
-      if (error) {
-        console.log("error is " + error);
-        resolve(false);
-      } else {
-        console.log("Email sent: " + info.response);
-        resolve(true);
-      }
-    });
-  });
 };
 ///////////////////////VALIDATE PASS BY BYCRYPT/////////////////////////
 const bcrypt = require("bcryptjs");
 const path = require("path");
 let validatePass = async (param1, param2) => {
-  return new Promise(function (resolve, reject) {
-    bcrypt.compare(param2, param1, function (err, res) {
-      if (err) {
-        reject(err);
-      } else {
-        resolve(res);
-      }
+    return new Promise(function (resolve, reject) {
+        bcrypt.compare(param2, param1, function (err, res) {
+            if (err) {
+                reject(err);
+            } else {
+                resolve(res);
+            }
+        });
     });
-  });
 };
 
 let encrytedPass = async (pass) => {
-  let salt = await bcrypt.genSalt(11);
-  let hashCode = await bcrypt.hash(pass, salt);
-  return hashCode;
+    let salt = await bcrypt.genSalt(11);
+    let hashCode = await bcrypt.hash(pass, salt);
+    return hashCode;
 };
 ///////////////////////////////////*//////////////////////////////////////
 // /////////////////////VALIDATE PASS BY BYCRYPT/////////////////////////
 let zeroPad = async (num, places) => {
-  const zero = places - num.toString().length + 1;
-  return Array(+(zero > 0 && zero)).join("0") + num;
+    const zero = places - num.toString().length + 1;
+    return Array(+(zero > 0 && zero)).join("0") + num;
 };
 ///////////////////////////////////*//////////////////////////////////////
 // /////////////////////////////////*//////////////////////////////////////
 
 let migrateWriteFile = async (tempPath, data) => {
-  return new Promise(function (resolve, reject) {
-    fs.writeFile(tempPath, data, function (err, res) {
-      if (err) {
-        console.log(err);
-        reject(err);
-      } else {
-        resolve(res);
-      }
+    return new Promise(function (resolve, reject) {
+        fs.writeFile(tempPath, data, function (err, res) {
+            if (err) {
+                console.log(err);
+                reject(err);
+            } else {
+                resolve(res);
+            }
+        });
     });
-  });
 };
 let migrateRenameFile = async (tempPath, finalPath) => {
-  return new Promise(function (resolve, reject) {
-    fs.rename(tempPath, finalPath, function (err, res) {
-      if (err) {
-        console.log(err);
-        reject(err);
-      } else {
-        resolve(res);
-      }
+    return new Promise(function (resolve, reject) {
+        fs.rename(tempPath, finalPath, function (err, res) {
+            if (err) {
+                console.log(err);
+                reject(err);
+            } else {
+                resolve(res);
+            }
+        });
     });
-  });
 };
 // /////////////////////////////////*//////////////////////////////////////
 let numberToLetter = async (num) => {
-  let number;
-  switch (num) {
-    case 0:
-      number = "CERO";
-      break;
-    case 1:
-      number = "UNO";
-      break;
-    case 2:
-      number = "DOS";
-      break;
-    case 3:
-      number = "TRES";
-      break;
-    case 4:
-      number = "CUATRO";
-      break;
-    case 5:
-      number = "CINCO";
-      break;
-    case 6:
-      number = "SEIS";
-      break;
-    case 7:
-      number = "SIETE";
-      break;
-    case 8:
-      number = "OCHO";
-      break;
-    case 9:
-      number = "NUEVE";
-      break;
-    case 10:
-      number = "DIEZ";
-      break;
-    case 11:
-      number = "ONCE";
-      break;
-    case 12:
-      number = "DOCE";
-      break;
-    case 13:
-      number = "TRECE";
-      break;
-    case 14:
-      number = "CATORCE";
-      break;
-    case 15:
-      number = "QUINCE";
-      break;
-    case 16:
-      number = "DIECISÉIS";
-      break;
-    case 17:
-      number = "DIECISIETE";
-      break;
-    case 18:
-      number = "DIECIOCHO";
-      break;
-    case 19:
-      number = "DIECINUEVE";
-      break;
-    case 20:
-      number = "VEINTE";
-      break;
-  }
-  return number;
+    let number;
+    switch (num) {
+        case 0:
+            number = "CERO";
+            break;
+        case 1:
+            number = "UNO";
+            break;
+        case 2:
+            number = "DOS";
+            break;
+        case 3:
+            number = "TRES";
+            break;
+        case 4:
+            number = "CUATRO";
+            break;
+        case 5:
+            number = "CINCO";
+            break;
+        case 6:
+            number = "SEIS";
+            break;
+        case 7:
+            number = "SIETE";
+            break;
+        case 8:
+            number = "OCHO";
+            break;
+        case 9:
+            number = "NUEVE";
+            break;
+        case 10:
+            number = "DIEZ";
+            break;
+        case 11:
+            number = "ONCE";
+            break;
+        case 12:
+            number = "DOCE";
+            break;
+        case 13:
+            number = "TRECE";
+            break;
+        case 14:
+            number = "CATORCE";
+            break;
+        case 15:
+            number = "QUINCE";
+            break;
+        case 16:
+            number = "DIECISÉIS";
+            break;
+        case 17:
+            number = "DIECISIETE";
+            break;
+        case 18:
+            number = "DIECIOCHO";
+            break;
+        case 19:
+            number = "DIECINUEVE";
+            break;
+        case 20:
+            number = "VEINTE";
+            break;
+    }
+    return number;
 };
 ///////////////////////////////////*//////////////////////////////////////
 module.exports = {
-  wrapedSendMail,
-  generateCode,
-  generateJsonLog,
-  templateInscription,
-  templateValidPayment,
-  templateSendUserCredential,
-  validatePass,
-  migrateRenameFile,
-  migrateWriteFile,
-  encrytedPass,
-  zeroPad,
-  numberToLetter,
-  URL_PLUBLIC,
-  URL_LOG,
-  URL_FINAL_LOG,
+    wrapedSendMail,
+    generateCode,
+    generateJsonLog,
+    templateInscription,
+    templateValidPayment,
+    templateSendUserCredential,
+    validatePass,
+    migrateRenameFile,
+    migrateWriteFile,
+    encrytedPass,
+    zeroPad,
+    numberToLetter,
+    URL_PLUBLIC,
+    URL_LOG,
+    URL_FINAL_LOG,
 };

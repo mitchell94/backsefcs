@@ -2970,7 +2970,8 @@ module.exports = {
                         note: registrationData[i].Registration_course[j].note,
                         type: registrationData[i].Registration_course[j].state,
                         // MPT
-                        code: registrationData[i].Registration_course[j].Course.code,
+                        code: registrationData[i].Registration_course[j].Course
+                            .code,
                     });
                 }
             }
