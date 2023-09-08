@@ -190,7 +190,7 @@ module.exports = {
                 // const pass = crypt.decrypt(req.body.pass, k, v);
                 const pass = req.body.pass;
                 const valid = await Model.findOne({
-                    where: { user: req.body.user, type: "Estudiante" },
+                    where: { user: req.body.user, type: "Estudiante" }
                     // include: {
                     //     model: Person,
                     //     as: "Person",
@@ -410,13 +410,13 @@ module.exports = {
     //PAGOS
     listStudentProgramIntranet: async (req, res) => {
         try {
-            // const user = await Model.findOne({
-            //     where: { id: req.userId },
-            // });
+            const user = await Model.findOne({
+                where: { id: req.userId },
+            });
 
             const data = await Student.findOne({
                 attributes: ["id", "id_program", "id_organic_unit", "type"],
-                where: { id: req.studentId },
+                where: { id_person: user.id_person },
                 include: {
                     attributes: [
                         "id",
@@ -424,32 +424,6 @@ module.exports = {
                         "denomination",
                         "description",
                     ],
-                    model: Program,
-                    as: "Program",
-                },
-            });
-
-            res.status(200).send(data);
-        } catch (err) {
-            console.log(err);
-            res.status(445).send({
-                message: message.ERROR_TRANSACTION,
-                error: err,
-            });
-        }
-    },
-    // MPT
-    listStudentPrograms: async (req, res) => {
-        try {
-            const user = await Model.findOne({
-                where: { id: req.userId },
-            });
-
-            const data = await Student.findAll({
-                attributes: ["id", "id_program"],
-                where: { id_person: user.id_person },
-                include: {
-                    attributes: ["id", "abbreviation"],
                     model: Program,
                     as: "Program",
                 },

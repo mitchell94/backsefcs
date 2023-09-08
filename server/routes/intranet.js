@@ -7,6 +7,9 @@ const ProjectController = require('../controllers/intranet').ProjectController;
 
 intranet.post('/user-intranet', verifyToken, UserIntranetController.createUserIntranet);
 intranet.get('/student-program', verifyToken, UserIntranetController.listStudentProgramIntranet);
+// MPT
+intranet.get('/student-programs-list', verifyToken, UserIntranetController.listStudentPrograms);
+
 intranet.get('/person/profile', verifyToken, UserIntranetController.retrivePersonProfileIntranet);
 intranet.get('/administrative-info',verifyToken, UserIntranetController.retriveDataAdministrativeIntranet);
 intranet.get('/document-solicited',verifyToken, UserIntranetController.retriveDataDocumentSolicited);

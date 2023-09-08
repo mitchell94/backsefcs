@@ -1764,11 +1764,11 @@ let templateSendUserCredential = async (name, user, pass) => {
                                                                  color: black;
                                                                  font-weight: bold;
                                                                  ">${name}</span>,
-                                                            es un gusto darle la bienvenida a nuestro Programa de <span style="
+                                                            le damos la bienvenida al <span style="
                                                                  color: #009688;
                                                                  font-weight: bold;
-                                                                 "> SEGUNDA ESPECIALIDAD / USE - FCS, UNSM.</span>
-                                                            A continuación, le proporcionamos sus credenciales.
+                                                                 ">PROGRAMA DE SEGUNDA ESPECIALIDAD / USE - FCS, UNSM.</span>
+                                                            A continuación, le proporcionamos sus credenciales de acceso.
                                                             <hr>
                                                         </td>
                                                     </tr>
@@ -1845,8 +1845,10 @@ let wrapedSendMail = async (mailOptions) => {
         const transporter = nodemailer.createTransport({
             service: "gmail",
             auth: {
-                user: "mitper94@gmail.com",
-                pass: "cmmnlgswocieciiu",
+                // user: "mitper94@gmail.com",
+                // pass: "cmmnlgswocieciiu",
+                user: "usefcs@unsm.edu.pe",
+                pass: "scekvxprzshiljud",
             },
         });
         transporter.sendMail(mailOptions, function (error, info) {

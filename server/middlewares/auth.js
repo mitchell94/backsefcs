@@ -10,8 +10,11 @@ async function verifyToken(req, res, next) {
         }
         const decoded = await jwt.verify(token, "mysecretkey");
         req.userId = decoded.id;
-        // MPT
-        req.studentId = decoded.id_student;
+        req.personId = decoded.id_person;
+        // Si la petición incluye la cabecera x-student-id
+        if (req.headers["x-student-id"]) {
+            req.studentId = req.headers["x-student-id"];
+        }
 
         next();
     } catch (err) {
