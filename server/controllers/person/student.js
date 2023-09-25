@@ -469,6 +469,13 @@ module.exports = {
                             },
                         ],
                     },
+                    {
+                        attributes: [
+                            "description",
+                        ],
+                        model: Admission_plan,
+                        as: "Admission_plan",
+                    },
                 ],
                 order: [["created_at", "desc"]],
             });

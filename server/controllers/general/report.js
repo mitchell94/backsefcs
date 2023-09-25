@@ -1785,7 +1785,8 @@ module.exports = {
             observation = documentBook.observation
                 ? documentBook.observation
                 : "";
-            date = moment(documentBook.created_at).format("LL");
+            date = moment(documentBook.created_at).format("D [de] MMMM [del] YYYY");
+            // date = moment(documentBook.created_at).format("LL");
 
             res.status(200).send({
                 principalOrganicUnit,
