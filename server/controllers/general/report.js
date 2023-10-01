@@ -2806,11 +2806,11 @@ module.exports = {
                             [
                                 Fn(
                                     "CONCAT",
+                                    Col("name"),
+                                    " ",
                                     Col("paternal"),
                                     " ",
-                                    Col("maternal"),
-                                    " ",
-                                    Col("name")
+                                    Col("maternal")
                                 ),
                                 "name",
                             ],
@@ -3133,7 +3133,7 @@ module.exports = {
                     },
                     {
                         required: true,
-                        attributes: ["denomination", "type", "credits"],
+                        attributes: ["code", "denomination", "type", "credits"],
                         model: Course,
                         as: "Course",
                         include: [
@@ -3255,8 +3255,8 @@ module.exports = {
                     i + 1,
                     studentsTemp[i].Registration.Student.Person.name,
                     studentsTemp[i].Registration.Student.Person.document_number,
-                    await abox.numberToLetter(studentsTemp[i].note),
                     studentsTemp[i].note,
+                    await abox.numberToLetter(studentsTemp[i].note),
                 ]);
                 if (studentsTemp[i].note >= 14) {
                     approvedStudent++;
@@ -3280,6 +3280,7 @@ module.exports = {
                     "-" +
                     acta.Academic_semester.denomination.substr(-2),
                 Course: {
+                    code: acta.Course.code.toUpperCase(),
                     denomination: acta.Course.denomination.toUpperCase(),
                     type: acta.Course.type.toUpperCase(),
                     credits: acta.Course.credits,
