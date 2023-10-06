@@ -127,7 +127,7 @@ module.exports = {
                         html: out,
                     };
                     let sendMail = await abox.wrapedSendMail(mailOptions);
-                    if (sendMail) {
+                    if (!sendMail) {
                         await user.update(
                             { pass: hashCode },
                             { transaction: t }
@@ -154,7 +154,7 @@ module.exports = {
                         html: out,
                     };
                     let sendMail = await abox.wrapedSendMail(mailOptions);
-                    if (sendMail) {
+                    if (!sendMail) {
                         await Model.create(
                             {
                                 id: uuid(),

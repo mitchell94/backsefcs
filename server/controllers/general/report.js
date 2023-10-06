@@ -3169,11 +3169,11 @@ module.exports = {
                         [
                             Fn(
                                 "CONCAT",
-                                Col("name"),
-                                " ",
                                 Col("paternal"),
                                 " ",
-                                Col("maternal")
+                                Col("maternal"),
+                                " ",
+                                Col("name")
                             ),
                             "name",
                         ],
