@@ -67,6 +67,7 @@
     "connect-multiparty": "^2.1.1",
     "cors": "^2.8.4",
     "device-type": "^1.0.0",
+    "excel4node": "^1.8.2",
     "express": "^4.16.3",
     "get-mac-address": "^1.0.0",
     "helmet": "^3.12.1",

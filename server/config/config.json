@@ -2,7 +2,7 @@
   "dev": {
     "username": "postgres",
     "password": "12345",
-    "database": "sefcs_02102023",
+    "database": "sefcs_11102023",
     "host": "localhost",
     "port": 5432,
     "dialect": "postgres",
@@ -28,7 +28,7 @@
   "pro": {
     "username": "postgres",
     "password": "sefcs@112233",
-    "database": "dbsefcs_02102023",
+    "database": "dbsefcs_05102023",
     "host": "localhost",
     "port": 5432,
     "dialect": "postgres",

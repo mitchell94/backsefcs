@@ -1835,6 +1835,7 @@ module.exports = {
                     {
                         attributes: [
                             "document_number",
+                            "gender",
                             [
                                 Fn(
                                     "CONCAT",
@@ -1949,6 +1950,7 @@ module.exports = {
                     {
                         attributes: [
                             "document_number",
+                            "gender",
                             [
                                 Fn(
                                     "CONCAT",
@@ -2188,6 +2190,7 @@ module.exports = {
                     {
                         attributes: [
                             "document_number",
+                            "gender",
                             [
                                 Fn(
                                     "CONCAT",
@@ -3715,6 +3718,7 @@ module.exports = {
             });
         }
     },
+    
     reportLiquidationByAdmissionPlan: async (req, res) => {
         try {
             const principalOrganicUnit = await System_configuration.findOne({
