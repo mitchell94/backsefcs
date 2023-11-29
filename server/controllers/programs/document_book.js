@@ -227,16 +227,12 @@ module.exports = {
                 if (digi != '0000') {
                     if (data2) throw {message: "Ya existe ese correlativo"};
                 }
-
-
                 await data.update({
                     correlative: digi,
                     observation: req.body.observation || null
                 }, {transaction: t});
             });
-
             // In this case, an instance of Model
-
             res.status(200).send(message.UPDATED_OK)
         } catch (err) {
             // Rollback transaction if any errors were encountered

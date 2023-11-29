@@ -422,6 +422,7 @@ module.exports = {
                             "id",
                             "document_number",
                             "email",
+                            // PRIMERO NOMBRES
                             [
                                 Fn(
                                     "CONCAT",
@@ -432,6 +433,18 @@ module.exports = {
                                     Col("maternal")
                                 ),
                                 "name",
+                            ],
+                            // PRIMERO APELLIDOS
+                            [
+                                Fn(
+                                    "CONCAT",
+                                    Col("paternal"),
+                                    " ",
+                                    Col("maternal"),
+                                    " ",
+                                    Col("name"),
+                                ),
+                                "name2",
                             ],
                         ],
                         model: Person,

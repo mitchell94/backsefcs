@@ -75,7 +75,8 @@ module.exports = {
     listMovement: async (req, res) => {
         try {
             let record = await Model.findAll({
-                where: {id_student: req.params.id_student}
+                where: {id_student: req.params.id_student},
+                order: [['updated_at', 'asc']]
             });
             res.status(200).send(record)
         } catch (err) {

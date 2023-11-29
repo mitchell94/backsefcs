@@ -361,13 +361,13 @@ module.exports = {
                         : null;
                     codigosedefilial =
                         students[i].Admission_plan &&
-                            students[i].Admission_plan.Program &&
-                            students[i].Admission_plan.Program
-                                .Organic_unit_register &&
-                            students[i].Admission_plan.Program.Organic_unit_register
-                                .Campu
+                        students[i].Admission_plan.Program &&
+                        students[i].Admission_plan.Program
+                            .Organic_unit_register &&
+                        students[i].Admission_plan.Program.Organic_unit_register
+                            .Campu
                             ? students[i].Admission_plan.Program
-                                .Organic_unit_register.Campu.code
+                                  .Organic_unit_register.Campu.code
                             : null;
                     tipoproceso = students[i].Admission_plan
                         ? students[i].Admission_plan.type_process
@@ -404,14 +404,14 @@ module.exports = {
                         : null;
                     codigofacultadunidad =
                         students[i].Admission_plan &&
-                            students[i].Admission_plan.Program &&
-                            students[i].Admission_plan.Program.Organic_unit_register
+                        students[i].Admission_plan.Program &&
+                        students[i].Admission_plan.Program.Organic_unit_register
                             ? students[i].Admission_plan.Program
-                                .Organic_unit_register.code_faculty_unit
+                                  .Organic_unit_register.code_faculty_unit
                             : null;
                     codigoprograma =
                         students[i].Admission_plan &&
-                            students[i].Admission_plan.Program
+                        students[i].Admission_plan.Program
                             ? students[i].Admission_plan.Program.code
                             : null;
 
@@ -430,24 +430,24 @@ module.exports = {
                         modalidadeingresotemp === 81
                             ? 8
                             : modalidadeingresotemp === 82
-                                ? 2
-                                : 3;
+                            ? 2
+                            : 3;
 
                     process =
                         students[i].Admission_plan &&
-                            students[i].Admission_plan.Process
+                        students[i].Admission_plan.Process
                             ? students[i].Admission_plan.Process.denomination
                             : null;
                     year =
                         students[i].Admission_plan &&
-                            students[i].Admission_plan.Process &&
-                            students[i].Admission_plan.Process.Academic_calendar
+                        students[i].Admission_plan.Process &&
+                        students[i].Admission_plan.Process.Academic_calendar
                             ? students[i].Admission_plan.Process
-                                .Academic_calendar.denomination
+                                  .Academic_calendar.denomination
                             : null;
                     programa =
                         students[i].Admission_plan &&
-                            students[i].Admission_plan.Program
+                        students[i].Admission_plan.Program
                             ? students[i].Admission_plan.Program.description
                             : "No def";
 
@@ -617,25 +617,25 @@ module.exports = {
                     // proceso = students[i].Admission_plan ? students[i].Admission_plan.date_start : null;
                     programa =
                         students[i].Admission_plan &&
-                            students[i].Admission_plan.Program
+                        students[i].Admission_plan.Program
                             ? students[i].Admission_plan.Program.denomination
                             : null;
                     unidadorganica =
                         students[i].Admission_plan &&
-                            students[i].Admission_plan.Program &&
-                            students[i].Admission_plan.Program.Organic_unit_register
+                        students[i].Admission_plan.Program &&
+                        students[i].Admission_plan.Program.Organic_unit_register
                             ? students[i].Admission_plan.Program
-                                .Organic_unit_register.denomination
+                                  .Organic_unit_register.denomination
                             : null;
                     sede =
                         students[i].Admission_plan &&
-                            students[i].Admission_plan.Program &&
-                            students[i].Admission_plan.Program
-                                .Organic_unit_register &&
-                            students[i].Admission_plan.Program.Organic_unit_register
-                                .Campu
+                        students[i].Admission_plan.Program &&
+                        students[i].Admission_plan.Program
+                            .Organic_unit_register &&
+                        students[i].Admission_plan.Program.Organic_unit_register
+                            .Campu
                             ? students[i].Admission_plan.Program
-                                .Organic_unit_register.Campu.denomination
+                                  .Organic_unit_register.Campu.denomination
                             : null;
                     documento = students[i].Person
                         ? students[i].Person.document_number
@@ -654,15 +654,15 @@ module.exports = {
                         : null;
                     process =
                         students[i].Admission_plan &&
-                            students[i].Admission_plan.Process
+                        students[i].Admission_plan.Process
                             ? students[i].Admission_plan.Process.denomination
                             : null;
                     year =
                         students[i].Admission_plan &&
-                            students[i].Admission_plan.Process &&
-                            students[i].Admission_plan.Process.Academic_calendar
+                        students[i].Admission_plan.Process &&
+                        students[i].Admission_plan.Process.Academic_calendar
                             ? students[i].Admission_plan.Process
-                                .Academic_calendar.denomination
+                                  .Academic_calendar.denomination
                             : null;
 
                     data.push({
@@ -808,25 +808,25 @@ module.exports = {
                     // proceso = students[i].Admission_plan ? students[i].Admission_plan.date_start : null;
                     programa =
                         students[i].Admission_plan &&
-                            students[i].Admission_plan.Program
+                        students[i].Admission_plan.Program
                             ? students[i].Admission_plan.Program.denomination
                             : null;
                     unidadorganica =
                         students[i].Admission_plan &&
-                            students[i].Admission_plan.Program &&
-                            students[i].Admission_plan.Program.Organic_unit_register
+                        students[i].Admission_plan.Program &&
+                        students[i].Admission_plan.Program.Organic_unit_register
                             ? students[i].Admission_plan.Program
-                                .Organic_unit_register.denomination
+                                  .Organic_unit_register.denomination
                             : null;
                     sede =
                         students[i].Admission_plan &&
-                            students[i].Admission_plan.Program &&
-                            students[i].Admission_plan.Program
-                                .Organic_unit_register &&
-                            students[i].Admission_plan.Program.Organic_unit_register
-                                .Campu
+                        students[i].Admission_plan.Program &&
+                        students[i].Admission_plan.Program
+                            .Organic_unit_register &&
+                        students[i].Admission_plan.Program.Organic_unit_register
+                            .Campu
                             ? students[i].Admission_plan.Program
-                                .Organic_unit_register.Campu.denomination
+                                  .Organic_unit_register.Campu.denomination
                             : null;
                     documento = students[i].Person
                         ? students[i].Person.document_number
@@ -845,15 +845,15 @@ module.exports = {
                         : null;
                     process =
                         students[i].Admission_plan &&
-                            students[i].Admission_plan.Process
+                        students[i].Admission_plan.Process
                             ? students[i].Admission_plan.Process.denomination
                             : null;
                     year =
                         students[i].Admission_plan &&
-                            students[i].Admission_plan.Process &&
-                            students[i].Admission_plan.Process.Academic_calendar
+                        students[i].Admission_plan.Process &&
+                        students[i].Admission_plan.Process.Academic_calendar
                             ? students[i].Admission_plan.Process
-                                .Academic_calendar.denomination
+                                  .Academic_calendar.denomination
                             : null;
 
                     data.push({
@@ -962,15 +962,15 @@ module.exports = {
                         : null;
                 unidadorganica =
                     students[i].Student &&
-                        students[i].Student.Organic_unit_register
+                    students[i].Student.Organic_unit_register
                         ? students[i].Student.Organic_unit_register.denomination
                         : null;
                 sede =
                     students[i].Student &&
-                        students[i].Student.Organic_unit_register &&
-                        students[i].Student.Organic_unit_register.Campu
+                    students[i].Student.Organic_unit_register &&
+                    students[i].Student.Organic_unit_register.Campu
                         ? students[i].Student.Organic_unit_register.Campu
-                            .denomination
+                              .denomination
                         : null;
                 documento =
                     students[i].Student && students[i].Student.Person
@@ -1157,8 +1157,8 @@ module.exports = {
                     );
                 admissionPlan =
                     _data[i].Student &&
-                        _data[i].Student.Admission_plan &&
-                        _data[i].Student.Admission_plan.description
+                    _data[i].Student.Admission_plan &&
+                    _data[i].Student.Admission_plan.description
                         ? _data[i].Student.Admission_plan.description.substr(8)
                         : "No def";
                 data.push({
@@ -1179,8 +1179,8 @@ module.exports = {
                         modalidaEstudio === "Presencial"
                             ? 1
                             : modalidaEstudio === "Semi-Presencial"
-                                ? 2
-                                : 3,
+                            ? 2
+                            : 3,
                     FECHA_MATRICULA: fechaMatricula,
                     CODIGO_ESCALA_PAGO: "",
                     PORCENTAJE_DESCUENTO: "",
@@ -1278,15 +1278,15 @@ module.exports = {
                         : null;
                 unidadorganica =
                     students[i].Student &&
-                        students[i].Student.Organic_unit_register
+                    students[i].Student.Organic_unit_register
                         ? students[i].Student.Organic_unit_register.denomination
                         : null;
                 sede =
                     students[i].Student &&
-                        students[i].Student.Organic_unit_register &&
-                        students[i].Student.Organic_unit_register.Campu
+                    students[i].Student.Organic_unit_register &&
+                    students[i].Student.Organic_unit_register.Campu
                         ? students[i].Student.Organic_unit_register.Campu
-                            .denomination
+                              .denomination
                         : null;
                 documento =
                     students[i].Student && students[i].Student.Person
@@ -1785,7 +1785,9 @@ module.exports = {
             observation = documentBook.observation
                 ? documentBook.observation
                 : "";
-            date = moment(documentBook.created_at).format("D [de] MMMM [del] YYYY");
+            date = moment(documentBook.created_at).format(
+                "D [de] MMMM [del] YYYY"
+            );
             // date = moment(documentBook.created_at).format("LL");
 
             res.status(200).send({
@@ -2097,19 +2099,19 @@ module.exports = {
                 studentRegister[0].Academic_semester.Academic_calendar.denomination.substr(
                     -4
                 ) +
-                "-" +
-                studentRegister[0].Academic_semester.denomination.substr(
-                    -2
-                );
+                    "-" +
+                    studentRegister[0].Academic_semester.denomination.substr(
+                        -2
+                    );
             lastRegister =
                 studentRegister[studentRegister.length - 1] &&
                 studentRegister[
                     studentRegister.length - 1
                 ].Academic_semester.Academic_calendar.denomination.substr(-4) +
-                "-" +
-                studentRegister[
-                    studentRegister.length - 1
-                ].Academic_semester.denomination.substr(-2);
+                    "-" +
+                    studentRegister[
+                        studentRegister.length - 1
+                    ].Academic_semester.denomination.substr(-2);
             correlative =
                 documentBook.correlative +
                 "-" +
@@ -2363,19 +2365,19 @@ module.exports = {
                 studentRegister[0].Academic_semester.Academic_calendar.denomination.substr(
                     -4
                 ) +
-                "-" +
-                studentRegister[0].Academic_semester.denomination.substr(
-                    -2
-                );
+                    "-" +
+                    studentRegister[0].Academic_semester.denomination.substr(
+                        -2
+                    );
             lastRegister =
                 studentRegister[studentRegister.length - 1] &&
                 studentRegister[
                     studentRegister.length - 1
                 ].Academic_semester.Academic_calendar.denomination.substr(-4) +
-                "-" +
-                studentRegister[
-                    studentRegister.length - 1
-                ].Academic_semester.denomination.substr(-2);
+                    "-" +
+                    studentRegister[
+                        studentRegister.length - 1
+                    ].Academic_semester.denomination.substr(-2);
             res.status(200).send({
                 principalOrganicUnit,
                 authorityTypeG,
@@ -2669,19 +2671,19 @@ module.exports = {
                 studentRegister[0].Academic_semester.Academic_calendar.denomination.substr(
                     -4
                 ) +
-                "-" +
-                studentRegister[0].Academic_semester.denomination.substr(
-                    -2
-                );
+                    "-" +
+                    studentRegister[0].Academic_semester.denomination.substr(
+                        -2
+                    );
             lastRegister =
                 studentRegister[studentRegister.length - 1] &&
                 studentRegister[
                     studentRegister.length - 1
                 ].Academic_semester.Academic_calendar.denomination.substr(-4) +
-                "-" +
-                studentRegister[
-                    studentRegister.length - 1
-                ].Academic_semester.denomination.substr(-2);
+                    "-" +
+                    studentRegister[
+                        studentRegister.length - 1
+                    ].Academic_semester.denomination.substr(-2);
             res.status(200).send({
                 principalOrganicUnit,
                 authorityTypeG,
@@ -2809,11 +2811,11 @@ module.exports = {
                             [
                                 Fn(
                                     "CONCAT",
-                                    Col("name"),
-                                    " ",
                                     Col("paternal"),
                                     " ",
-                                    Col("maternal")
+                                    Col("maternal"),
+                                    " ",
+                                    Col("name")
                                 ),
                                 "name",
                             ],
@@ -2962,7 +2964,7 @@ module.exports = {
                         state: true,
                         note_state:
                             registrationData[i].Registration_course[j].state ===
-                                "Sin nota"
+                            "Sin nota"
                                 ? true
                                 : false, //genero este estado para poder manejar mejor en la vista
                         //registration table
@@ -3412,6 +3414,314 @@ module.exports = {
     ////////////////////////////////////////////////////
 
     //REPORTES DE CONTABILIDAD////////////////////////////////////////////////////
+    // reportExcelPaymentProgramAdmisionTotal: async (req, res) => {
+    //     try {
+    //         let dataExcel = [];
+    //         let payments = [];
+    //         let info = "";
+    //         await ST.transaction(async (t) => {
+    //             //OBTENEMOS INFO DE PAGOS
+    //             let data = await Admission_plan.findOne(
+    //                 {
+    //                     where: { id: req.params.id_admission_plan },
+    //                     attributes: ["description", "id_process"],
+    //                     include: {
+    //                         attributes: ["denomination"],
+    //                         model: Program,
+    //                         as: "Program",
+    //                         include: {
+    //                             attributes: ["denomination"],
+    //                             model: Organic_unit,
+    //                             as: "Organic_unit_register",
+    //                             include: {
+    //                                 attributes: ["denomination"],
+    //                                 model: Campus,
+    //                                 as: "Campu",
+    //                             },
+    //                         },
+    //                     },
+    //                 },
+    //                 { transaction: t }
+    //             );
+
+    //             //CONSULTAMOS LOS COSTOS DE ADMISION - PENSION
+    //             let pensionCost = await Cost_admission_plan.findOne(
+    //                 {
+    //                     where: {
+    //                         id_admission_plan: req.params.id_admission_plan,
+    //                     },
+    //                     include: {
+    //                         attributes: ["denomination"],
+    //                         where: {
+    //                             denomination: {
+    //                                 [Op.like]: "%" + "Pensión " + "%",
+    //                             },
+    //                         },
+    //                         model: Concept,
+    //                         as: "Concept",
+    //                     },
+    //                 },
+    //                 { transaction: t }
+    //             );
+
+    //             //CONSULTAMOS LOS COSTOS DE MATRÍCULA PARA OBTENER LA CANTIDAD DE MATRICULAS
+    //             let matriculaCost = await Cost_admission_plan.findOne(
+    //                 {
+    //                     where: {
+    //                         id_admission_plan: req.params.id_admission_plan,
+    //                     },
+    //                     include: {
+    //                         attributes: ["denomination"],
+    //                         where: {
+    //                             denomination: {
+    //                                 [Op.like]: "%" + "Matrícula " + "%",
+    //                             },
+    //                         },
+    //                         model: Concept,
+    //                         as: "Concept",
+    //                     },
+    //                 },
+    //                 { transaction: t }
+    //             );
+    //             let totalPension = pensionCost.cant / matriculaCost.cant;
+
+    //             //OBTENEMOS LOS PAGOS
+    //             let _payments = await Student.findAll(
+    //                 {
+    //                     where: {
+    //                         id_admission_plan: req.params.id_admission_plan,
+    //                     },
+    //                     attributes: ["id"],
+    //                     include: [
+    //                         {
+    //                             where: {
+    //                                 id_semester: req.params.id_semester,
+    //                                 id_concept: {
+    //                                     [Op.or]: [
+    //                                         81, 82, 83, 84, 85, 3, 4, 94, 8, 92,
+    //                                     ],
+    //                                 },
+    //                             },
+    //                             required: true,
+    //                             // attributes: ['voucher_code', 'voucher_amount', 'voucher_date', 'voucher_url', 'observation', 'type', 'state', 'created_at', 'updated_at'],
+    //                             model: Payment,
+    //                             as: "Payment",
+    //                         },
+    //                         {
+    //                             attributes: [
+    //                                 "document_number",
+    //                                 [
+    //                                     Fn(
+    //                                         "CONCAT",
+    //                                         Col("paternal"),
+    //                                         " ",
+    //                                         Col("maternal"),
+    //                                         " ",
+    //                                         Col("name")
+    //                                     ),
+    //                                     "name",
+    //                                 ],
+    //                             ],
+    //                             model: Person,
+    //                             as: "Person",
+    //                         },
+    //                     ],
+    //                     order: [
+    //                         [
+    //                             { model: Payment, as: "Payment" },
+    //                             "created_at",
+    //                             "asc",
+    //                         ],
+    //                     ],
+    //                 },
+    //                 { transaction: t }
+    //             );
+
+    //             //ORDENAMOS POR DNI
+    //             payments = await _.groupBy(
+    //                 _payments,
+    //                 ({ Person: { document_number } }) => `${document_number}`
+    //             );
+    //             let claves = Object.keys(payments);
+    //             let type = "Matrícula";
+    //             if (data.id_process == req.params.id_semester) {
+    //                 type = "Inscripción";
+    //             }
+    //             for (let i = 0; i < claves.length; i++) {
+    //                 let clave = claves[i];
+    //                 // COMO DETERMINAR CUANDO ES UNA MATRICULA Y CUANDO ES UNA INSCRIPCION
+
+    //                 if (type === "Inscripción") {
+    //                     dataExcel.push({
+    //                         ID: i + 1,
+    //                         ESTUDIANTE: payments[clave][0].Person.name,
+    //                         INSCRIPCIÓN:
+    //                             payments[clave][0] == null
+    //                                 ? "Null"
+    //                                 : payments[clave][0].Payment.type ===
+    //                                   "Pagado"
+    //                                 ? payments[clave][0].Payment.amount
+    //                                 : "-",
+    //                         MATRÍCULA:
+    //                             payments[clave][1] == null
+    //                                 ? "Null"
+    //                                 : payments[clave][1].Payment.type ===
+    //                                   "Pagado"
+    //                                 ? payments[clave][1].Payment.amount
+    //                                 : "-",
+    //                         "COUTA 1":
+    //                             payments[clave][2] == null
+    //                                 ? "Null"
+    //                                 : payments[clave][2].Payment.type ===
+    //                                   "Pagado"
+    //                                 ? payments[clave][2].Payment.amount
+    //                                 : "-",
+    //                         "COUTA 2":
+    //                             payments[clave][3] == null
+    //                                 ? "Null"
+    //                                 : payments[clave][3].Payment.type ===
+    //                                   "Pagado"
+    //                                 ? payments[clave][3].Payment.amount
+    //                                 : "-",
+    //                         "COUTA 3":
+    //                             payments[clave][4] == null
+    //                                 ? "Null"
+    //                                 : payments[clave][4].Payment.type ===
+    //                                   "Pagado"
+    //                                 ? payments[clave][4].Payment.amount
+    //                                 : "-",
+    //                         "COUTA 4":
+    //                             payments[clave][5] == null
+    //                                 ? "Null"
+    //                                 : payments[clave][5].Payment.type ===
+    //                                   "Pagado"
+    //                                 ? payments[clave][5].Payment.amount
+    //                                 : "-",
+    //                         "COUTA 5":
+    //                             payments[clave][6] == null
+    //                                 ? "Null"
+    //                                 : payments[clave][6].Payment.type ===
+    //                                   "Pagado"
+    //                                 ? payments[clave][6].Payment.amount
+    //                                 : "-",
+    //                         "COUTA 6":
+    //                             payments[clave][7] == null
+    //                                 ? "Null"
+    //                                 : payments[clave][7].Payment.type ===
+    //                                   "Pagado"
+    //                                 ? payments[clave][7].Payment.amount
+    //                                 : "-",
+    //                         "COUTA 7":
+    //                             payments[clave][8] == null
+    //                                 ? "Null"
+    //                                 : payments[clave][8].Payment.type ===
+    //                                   "Pagado"
+    //                                 ? payments[clave][8].Payment.amount
+    //                                 : "-",
+    //                         "COUTA 8":
+    //                             payments[clave][9] == null
+    //                                 ? "Null"
+    //                                 : payments[clave][9].Payment.type ===
+    //                                   "Pagado"
+    //                                 ? payments[clave][9].Payment.amount
+    //                                 : "-",
+
+    //                         // 'COUTA 9': payments[clave][8].Payment.amount + '/' + payments[clave][8].Payment.type,
+    //                     });
+    //                 } else {
+    //                     dataExcel.push({
+    //                         ID: i + 1,
+    //                         ESTUDIANTE: payments[clave][0].Person.name,
+    //                         MATRÍCULA:
+    //                             payments[clave][0] == null
+    //                                 ? "Null"
+    //                                 : payments[clave][0].Payment.type ===
+    //                                   "Pagado"
+    //                                 ? payments[clave][0].Payment.amount
+    //                                 : "-",
+    //                         "COUTA 1":
+    //                             payments[clave][1] == null
+    //                                 ? "Null"
+    //                                 : payments[clave][1].Payment.type ===
+    //                                   "Pagado"
+    //                                 ? payments[clave][1].Payment.amount
+    //                                 : "-",
+    //                         "COUTA 2":
+    //                             payments[clave][2] == null
+    //                                 ? "Null"
+    //                                 : payments[clave][2].Payment.type ===
+    //                                   "Pagado"
+    //                                 ? payments[clave][2].Payment.amount
+    //                                 : "-",
+    //                         "COUTA 3":
+    //                             payments[clave][3] == null
+    //                                 ? "Null"
+    //                                 : payments[clave][3].Payment.type ===
+    //                                   "Pagado"
+    //                                 ? payments[clave][3].Payment.amount
+    //                                 : "-",
+    //                         "COUTA 4":
+    //                             payments[clave][4] == null
+    //                                 ? "Null"
+    //                                 : payments[clave][4].Payment.type ===
+    //                                   "Pagado"
+    //                                 ? payments[clave][4].Payment.amount
+    //                                 : "-",
+    //                         "COUTA 5":
+    //                             payments[clave][5] == null
+    //                                 ? "Null"
+    //                                 : payments[clave][5].Payment.type ===
+    //                                   "Pagado"
+    //                                 ? payments[clave][5].Payment.amount
+    //                                 : "-",
+    //                         "COUTA 6":
+    //                             payments[clave][6] == null
+    //                                 ? "Null"
+    //                                 : payments[clave][6].Payment.type ===
+    //                                   "Pagado"
+    //                                 ? payments[clave][6].Payment.amount
+    //                                 : "-",
+    //                         "COUTA 7":
+    //                             payments[clave][7] == null
+    //                                 ? "Null"
+    //                                 : payments[clave][7].Payment.type ===
+    //                                   "Pagado"
+    //                                 ? payments[clave][7].Payment.amount
+    //                                 : "-",
+    //                         "COUTA 8":
+    //                             payments[clave][8] == null
+    //                                 ? "Null"
+    //                                 : payments[clave][8].Payment.type ===
+    //                                   "Pagado"
+    //                                 ? payments[clave][8].Payment.amount
+    //                                 : "-",
+    //                     });
+    //                 }
+    //             }
+
+    //             info = {
+    //                 admission_plan_denomination: data.description.toUpperCase(),
+    //                 program_denomination:
+    //                     data.Program.denomination.toUpperCase(),
+    //                 organic_unit_denomination:
+    //                     data.Program.Organic_unit_register.denomination.toUpperCase(),
+    //                 sede_denomination:
+    //                     data.Program.Organic_unit_register.Campu.denomination.toUpperCase(),
+    //                 total_pension: totalPension,
+    //             };
+    //         });
+
+    //         res.status(200).send({ dataExcel: dataExcel, info: info });
+    //     } catch (err) {
+    //         console.log(err);
+    //         res.status(445).send({
+    //             message: message.ERROR_TRANSACTION,
+    //             error: err,
+    //         });
+    //     }
+    // },
+
+
     reportExcelPaymentProgramAdmisionTotal: async (req, res) => {
         try {
             let dataExcel = [];
@@ -3534,7 +3844,7 @@ module.exports = {
                     },
                     { transaction: t }
                 );
-                
+
                 //ORDENAMOS POR DNI
                 payments = await _.groupBy(
                     _payments,
@@ -3547,8 +3857,8 @@ module.exports = {
                 }
                 for (let i = 0; i < claves.length; i++) {
                     let clave = claves[i];
+                    
                     // COMO DETERMINAR CUANDO ES UNA MATRICULA Y CUANDO ES UNA INSCRIPCION
-
                     if (type === "Inscripción") {
                         dataExcel.push({
                             ID: i + 1,
@@ -3557,72 +3867,72 @@ module.exports = {
                                 payments[clave][0] == null
                                     ? "Null"
                                     : payments[clave][0].Payment.type ===
-                                        "Pagado"
-                                        ? payments[clave][0].Payment.amount
-                                        : "-",
+                                      "Pagado"
+                                    ? payments[clave][0].Payment.amount
+                                    : "-",
                             MATRÍCULA:
                                 payments[clave][1] == null
                                     ? "Null"
                                     : payments[clave][1].Payment.type ===
-                                        "Pagado"
-                                        ? payments[clave][1].Payment.amount
-                                        : "-",
+                                      "Pagado"
+                                    ? payments[clave][1].Payment.amount
+                                    : "-",
                             "COUTA 1":
                                 payments[clave][2] == null
                                     ? "Null"
                                     : payments[clave][2].Payment.type ===
-                                        "Pagado"
-                                        ? payments[clave][2].Payment.amount
-                                        : "-",
+                                      "Pagado"
+                                    ? payments[clave][2].Payment.amount
+                                    : "-",
                             "COUTA 2":
                                 payments[clave][3] == null
                                     ? "Null"
                                     : payments[clave][3].Payment.type ===
-                                        "Pagado"
-                                        ? payments[clave][3].Payment.amount
-                                        : "-",
+                                      "Pagado"
+                                    ? payments[clave][3].Payment.amount
+                                    : "-",
                             "COUTA 3":
                                 payments[clave][4] == null
                                     ? "Null"
                                     : payments[clave][4].Payment.type ===
-                                        "Pagado"
-                                        ? payments[clave][4].Payment.amount
-                                        : "-",
+                                      "Pagado"
+                                    ? payments[clave][4].Payment.amount
+                                    : "-",
                             "COUTA 4":
                                 payments[clave][5] == null
                                     ? "Null"
                                     : payments[clave][5].Payment.type ===
-                                        "Pagado"
-                                        ? payments[clave][5].Payment.amount
-                                        : "-",
+                                      "Pagado"
+                                    ? payments[clave][5].Payment.amount
+                                    : "-",
                             "COUTA 5":
                                 payments[clave][6] == null
                                     ? "Null"
                                     : payments[clave][6].Payment.type ===
-                                        "Pagado"
-                                        ? payments[clave][6].Payment.amount
-                                        : "-",
+                                      "Pagado"
+                                    ? payments[clave][6].Payment.amount
+                                    : "-",
                             "COUTA 6":
                                 payments[clave][7] == null
                                     ? "Null"
                                     : payments[clave][7].Payment.type ===
-                                        "Pagado"
-                                        ? payments[clave][7].Payment.amount
-                                        : "-",
-                            "COUTA 7":
-                                payments[clave][8] == null
-                                    ? "Null"
-                                    : payments[clave][8].Payment.type ===
-                                        "Pagado"
-                                        ? payments[clave][8].Payment.amount
-                                        : "-",
-                            "COUTA 8":
-                                payments[clave][9] == null
-                                    ? "Null"
-                                    : payments[clave][9].Payment.type ===
-                                        "Pagado"
-                                        ? payments[clave][9].Payment.amount
-                                        : "-",
+                                      "Pagado"
+                                    ? payments[clave][7].Payment.amount
+                                    : "-",
+                            // "COUTA 7":
+                            //     payments[clave][8] == null
+                            //         ? "Null"
+                            //         : payments[clave][8].Payment.type ===
+                            //           "Pagado"
+                            //         ? payments[clave][8].Payment.amount
+                            //         : "-",
+                            // "COUTA 8":
+                            //     payments[clave][9] == null
+                            //         ? "Null"
+                            //         : payments[clave][9].Payment.type ===
+                            //           "Pagado"
+                            //         ? payments[clave][9].Payment.amount
+                            //         : "-",
 
                             // 'COUTA 9': payments[clave][8].Payment.amount + '/' + payments[clave][8].Payment.type,
                         });
@@ -3634,65 +3944,65 @@ module.exports = {
                                 payments[clave][0] == null
                                     ? "Null"
                                     : payments[clave][0].Payment.type ===
-                                        "Pagado"
-                                        ? payments[clave][0].Payment.amount
-                                        : "-",
+                                      "Pagado"
+                                    ? payments[clave][0].Payment.amount
+                                    : "-",
                             "COUTA 1":
                                 payments[clave][1] == null
                                     ? "Null"
                                     : payments[clave][1].Payment.type ===
-                                        "Pagado"
-                                        ? payments[clave][1].Payment.amount
-                                        : "-",
+                                      "Pagado"
+                                    ? payments[clave][1].Payment.amount
+                                    : "-",
                             "COUTA 2":
                                 payments[clave][2] == null
                                     ? "Null"
                                     : payments[clave][2].Payment.type ===
-                                        "Pagado"
-                                        ? payments[clave][2].Payment.amount
-                                        : "-",
+                                      "Pagado"
+                                    ? payments[clave][2].Payment.amount
+                                    : "-",
                             "COUTA 3":
                                 payments[clave][3] == null
                                     ? "Null"
                                     : payments[clave][3].Payment.type ===
-                                        "Pagado"
-                                        ? payments[clave][3].Payment.amount
-                                        : "-",
+                                      "Pagado"
+                                    ? payments[clave][3].Payment.amount
+                                    : "-",
                             "COUTA 4":
                                 payments[clave][4] == null
                                     ? "Null"
                                     : payments[clave][4].Payment.type ===
-                                        "Pagado"
-                                        ? payments[clave][4].Payment.amount
-                                        : "-",
+                                      "Pagado"
+                                    ? payments[clave][4].Payment.amount
+                                    : "-",
                             "COUTA 5":
                                 payments[clave][5] == null
                                     ? "Null"
                                     : payments[clave][5].Payment.type ===
-                                        "Pagado"
-                                        ? payments[clave][5].Payment.amount
-                                        : "-",
+                                      "Pagado"
+                                    ? payments[clave][5].Payment.amount
+                                    : "-",
                             "COUTA 6":
                                 payments[clave][6] == null
                                     ? "Null"
                                     : payments[clave][6].Payment.type ===
-                                        "Pagado"
-                                        ? payments[clave][6].Payment.amount
-                                        : "-",
-                            "COUTA 7":
-                                payments[clave][7] == null
-                                    ? "Null"
-                                    : payments[clave][7].Payment.type ===
-                                        "Pagado"
-                                        ? payments[clave][7].Payment.amount
-                                        : "-",
-                            "COUTA 8":
-                                payments[clave][8] == null
-                                    ? "Null"
-                                    : payments[clave][8].Payment.type ===
-                                        "Pagado"
-                                        ? payments[clave][8].Payment.amount
-                                        : "-",
+                                      "Pagado"
+                                    ? payments[clave][6].Payment.amount
+                                    : "-",
+                            // "COUTA 7":
+                            //     payments[clave][7] == null
+                            //         ? "Null"
+                            //         : payments[clave][7].Payment.type ===
+                            //           "Pagado"
+                            //         ? payments[clave][7].Payment.amount
+                            //         : "-",
+                            // "COUTA 8":
+                            //     payments[clave][8] == null
+                            //         ? "Null"
+                            //         : payments[clave][8].Payment.type ===
+                            //           "Pagado"
+                            //         ? payments[clave][8].Payment.amount
+                            //         : "-",
                         });
                     }
                 }
@@ -3718,7 +4028,7 @@ module.exports = {
             });
         }
     },
-    
+
     reportLiquidationByAdmissionPlan: async (req, res) => {
         try {
             const principalOrganicUnit = await System_configuration.findOne({
@@ -5338,7 +5648,7 @@ module.exports = {
                         j;
                         j < students[i].Requeriment_delivereds.length;
                         j++
-                    ) { }
+                    ) {}
                 }
                 data2 = students;
             });

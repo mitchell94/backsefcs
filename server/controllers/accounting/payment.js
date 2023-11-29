@@ -217,14 +217,23 @@ module.exports = {
                 let concept = await Concept.findByPk(req.body.id_concept);
                 let payment = await Model.findByPk(req.params.id_payment);
 
+                // MPT 191123
+                let generateValue = () => {
+                    if (payment.generate == 2) {
+                        return 2;
+                    } else {
+                        concept.generate ? 1 : 0
+                    }
+                }
+                // MPT 191123 END
+
                 await payment.update({
-
-
                     id_semester: req.body.id_process,
                     id_concept: req.body.id_concept,
                     denomination: concept.denomination,
                     amount: req.body.amount,
-                    generate: concept.generate ? 1 : 0
+                    generate: generateValue(),
+                    // generate: concept.generate ? 1 : 0
 
                 }, {transaction: t});
             });
