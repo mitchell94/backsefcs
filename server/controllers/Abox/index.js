@@ -20,7 +20,8 @@ if (env === "dev") {
 if (env === "test") {
     if (config.SYSTEM === "SEFCSUNSM") {
         // publicFolder = path.join(__dirname, '..', 'testseunsm/public');
-        publicFolder = "/usr/share/nginx/html/testseunsm/public/";
+        // publicFolder = "/usr/share/nginx/html/testseunsm/public/";
+        publicFolder = "/var/www/html/testseunsm/public/";
     }
 
     URL_PLUBLIC = publicFolder;
@@ -32,7 +33,8 @@ if (env === "test") {
 if (env === "pro") {
     if (config.SYSTEM === "SEFCSUNSM") {
         //publicFolder = path.join(__dirname, '..', '/seunsm/public');
-        publicFolder = "/usr/share/nginx/html/seunsm/public/";
+        // publicFolder = "/usr/share/nginx/html/seunsm/public/";
+        publicFolder = "/var/www/html/seunsm/public/";
     }
 
     URL_PLUBLIC = publicFolder;
