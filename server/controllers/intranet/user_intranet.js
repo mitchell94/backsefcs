@@ -190,7 +190,9 @@ module.exports = {
                 // const pass = crypt.decrypt(req.body.pass, k, v);
                 const pass = req.body.pass;
                 const valid = await Model.findOne({
-                    where: { user: req.body.user, type: "Estudiante" },
+                    // where: { user: req.body.user, type: "Estudiante" },
+                    where: { user: req.body.user },
+
                     // include: {
                     //     model: Person,
                     //     as: "Person",
@@ -209,6 +211,8 @@ module.exports = {
                         id: valid.id,
                         // id_student: valid.Person.Student.id,
                         id_person: valid.id_person,
+                        // AGREGADO PARA TIPO ESTUDIANTES Y DOCENTE
+                        // type: valid.type
                     },
                     "mysecretkey",
                     {
@@ -1789,6 +1793,42 @@ module.exports = {
             });
         } catch (err) {
             console.log(err);
+            res.status(445).send({
+                message: message.ERROR_TRANSACTION,
+                error: err,
+            });
+        }
+    },
+
+    listStudentDocuments: async (req, res) => {
+        try {
+            let documents = await Document_book.findAll({
+                attributes: [
+                    "id",
+                    "id_concept",
+                    "id_student",
+                    "file",
+                    "state_upload",
+                    "state",
+                    "created_at",
+                ],
+                where: {
+                    id_student: req.studentId,
+                    // state_upload: true
+                    // file: {
+                    //     [Op.not]: null,
+                    // },
+                },
+                include: {
+                    attributes: ["denomination"],
+                    model: Concept,
+                    as: "Concept",
+                },
+                order: [["created_at", "asc"]],
+            });
+
+            res.status(200).send(documents);
+        } catch (err) {
             res.status(445).send({
                 message: message.ERROR_TRANSACTION,
                 error: err,

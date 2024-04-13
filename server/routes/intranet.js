@@ -44,5 +44,6 @@ intranet.post('/login', UserIntranetController.validUserIntranet);
 // MPT
 intranet.patch('/change-password', verifyToken, UserIntranetController.changePassword);
 intranet.get('/student-academic-record', verifyToken, UserIntranetController.reportAcademicRecord);
+intranet.get('/student-documents', verifyToken, UserIntranetController.listStudentDocuments);
 
 module.exports = intranet;

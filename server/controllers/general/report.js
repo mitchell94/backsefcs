@@ -2134,11 +2134,153 @@ module.exports = {
             });
         }
     },
+
+    // ANTIGUA CONSTANIA DE EGRESO
+    // reportConstancyEgress: async (req, res) => {
+    //     let date = "";
+    //     let correlative = "";
+    //     let firtsRegister = "NO DEFINIDO";
+    //     let lastRegister = "NO DEFINIDO";
+    //     try {
+    //         const documentBook = await Document_book.findByPk(
+    //             req.params.id_document_book
+    //         );
+    //         const principalOrganicUnit = await System_configuration.findOne({
+    //             attributes: ["description", "abbreviation"],
+    //             where: { state: true },
+    //         });
+
+    //         const authorityTypeG = await Authority.findOne({
+    //             attributes: ["person", "charge"],
+    //             where: { state: true, type: "G" },
+    //         });
+    //         //get first and ultimate registration for student
+    //         let studentRegister = [];
+    //         studentRegister = await Registration.findAll({
+    //             // attributes: ['id', 'id_plan', 'id_program', 'type'],
+    //             where: {
+    //                 id_student: req.params.id_student,
+    //             },
+    //             include: {
+    //                 required: true,
+    //                 //attributes: ['id', 'denomination'],
+    //                 model: Registration_course,
+    //                 as: "Registration_course",
+    //                 include: {
+    //                     //attributes: ['id', 'denomination'],
+    //                     model: Schedule,
+    //                     as: "Schedule",
+    //                 },
+    //             },
+    //             order: [
+    //                 ["created_at", "asc"],
+    //                 [
+    //                     {
+    //                         model: Registration_course,
+    //                         as: "Registration_course",
+    //                     },
+    //                     "created_at",
+    //                     "asc",
+    //                 ],
+    //             ],
+    //         });
+
+    //         const studentData = await Student.findOne({
+    //             attributes: ["id", "id_plan", "id_program", "type"],
+    //             where: {
+    //                 id: req.params.id_student,
+    //             },
+    //             include: [
+    //                 {
+    //                     attributes: [
+    //                         "document_number",
+    //                         "gender",
+    //                         [
+    //                             Fn(
+    //                                 "CONCAT",
+    //                                 Col("name"),
+    //                                 " ",
+    //                                 Col("paternal"),
+    //                                 " ",
+    //                                 Col("maternal")
+    //                             ),
+    //                             "name",
+    //                         ],
+    //                     ],
+    //                     model: Person,
+    //                     as: "Person",
+    //                 },
+    //                 {
+    //                     attributes: ["description", "duration", "date_class"],
+    //                     model: Admission_plan,
+    //                     as: "Admission_plan",
+    //                     include: [
+    //                         {
+    //                             attributes: ["credit_required"],
+    //                             model: Plan,
+    //                             as: "Plan",
+    //                         },
+    //                     ],
+    //                 },
+    //                 {
+    //                     attributes: ["denomination"],
+    //                     model: Program,
+    //                     as: "Program",
+    //                 },
+    //             ],
+    //         });
+    //         correlative =
+    //             documentBook.correlative +
+    //             "-" +
+    //             moment(documentBook.created_at).year();
+    //         date = moment(documentBook.created_at).format("LL");
+    //         let tempDates = [];
+    //         let tempDatesEnd = [];
+    //         for (let i = 0; i < studentRegister.length; i++) {
+    //             for (
+    //                 let j = 0;
+    //                 j < studentRegister[i].Registration_course.length;
+    //                 j++
+    //             ) {
+    //                 tempDates.push(
+    //                     moment(
+    //                         studentRegister[i].Registration_course[j].Schedule
+    //                             .start_date
+    //                     )
+    //                 );
+    //                 tempDatesEnd.push(
+    //                     moment(
+    //                         studentRegister[i].Registration_course[j].Schedule
+    //                             .end_date
+    //                     )
+    //                 );
+    //             }
+    //         }
+    //         lastRegister = moment.max(tempDatesEnd).format("DD-MM-YYYY");
+    //         firtsRegister = moment.min(tempDates).format("DD-MM-YYYY");
+
+    //         res.status(200).send({
+    //             principalOrganicUnit,
+    //             authorityTypeG,
+    //             studentData,
+    //             correlative,
+    //             date,
+    //             firtsRegister,
+    //             lastRegister,
+    //             studentRegister,
+    //         });
+    //     } catch (err) {
+    //         console.log(err);
+    //         res.status(445).send({
+    //             message: message.ERROR_TRANSACTION,
+    //             error: err,
+    //         });
+    //     }
+    // },
+
+    // NUEVA CONSTANCIA DE EGRESO
     reportConstancyEgress: async (req, res) => {
         let date = "";
-        let correlative = "";
-        let firtsRegister = "NO DEFINIDO";
-        let lastRegister = "NO DEFINIDO";
         try {
             const documentBook = await Document_book.findByPk(
                 req.params.id_document_book
@@ -2152,35 +2294,23 @@ module.exports = {
                 attributes: ["person", "charge"],
                 where: { state: true, type: "G" },
             });
-            //get first and ultimate registration for student
-            let studentRegister = [];
-            studentRegister = await Registration.findAll({
-                // attributes: ['id', 'id_plan', 'id_program', 'type'],
+
+            //Get lasted student register
+            let studentLatestRegister = [];
+            studentLatestRegister = await Registration.findOne({
                 where: {
                     id_student: req.params.id_student,
                 },
                 include: {
                     required: true,
-                    //attributes: ['id', 'denomination'],
-                    model: Registration_course,
-                    as: "Registration_course",
+                    model: Academic_semester,
+                    as: "Academic_semester",
                     include: {
-                        //attributes: ['id', 'denomination'],
-                        model: Schedule,
-                        as: "Schedule",
+                        model: Academic_calendar,
+                        as: "Academic_calendar",
                     },
                 },
-                order: [
-                    ["created_at", "asc"],
-                    [
-                        {
-                            model: Registration_course,
-                            as: "Registration_course",
-                        },
-                        "created_at",
-                        "asc",
-                    ],
-                ],
+                order: [["id_semester", "desc"]],
             });
 
             const studentData = await Student.findOne({
@@ -2227,45 +2357,15 @@ module.exports = {
                     },
                 ],
             });
-            correlative =
-                documentBook.correlative +
-                "-" +
-                moment(documentBook.created_at).year();
+
             date = moment(documentBook.created_at).format("LL");
-            let tempDates = [];
-            let tempDatesEnd = [];
-            for (let i = 0; i < studentRegister.length; i++) {
-                for (
-                    let j = 0;
-                    j < studentRegister[i].Registration_course.length;
-                    j++
-                ) {
-                    tempDates.push(
-                        moment(
-                            studentRegister[i].Registration_course[j].Schedule
-                                .start_date
-                        )
-                    );
-                    tempDatesEnd.push(
-                        moment(
-                            studentRegister[i].Registration_course[j].Schedule
-                                .end_date
-                        )
-                    );
-                }
-            }
-            lastRegister = moment.max(tempDatesEnd).format("DD-MM-YYYY");
-            firtsRegister = moment.min(tempDates).format("DD-MM-YYYY");
 
             res.status(200).send({
                 principalOrganicUnit,
                 authorityTypeG,
                 studentData,
-                correlative,
                 date,
-                firtsRegister,
-                lastRegister,
-                studentRegister,
+                studentLatestRegister,
             });
         } catch (err) {
             console.log(err);
@@ -2275,6 +2375,7 @@ module.exports = {
             });
         }
     },
+
     reportConstancyAdeudar: async (req, res) => {
         let date = "";
         let correlative = "";
@@ -3721,7 +3822,6 @@ module.exports = {
     //     }
     // },
 
-
     reportExcelPaymentProgramAdmisionTotal: async (req, res) => {
         try {
             let dataExcel = [];
@@ -3857,7 +3957,7 @@ module.exports = {
                 }
                 for (let i = 0; i < claves.length; i++) {
                     let clave = claves[i];
-                    
+
                     // COMO DETERMINAR CUANDO ES UNA MATRICULA Y CUANDO ES UNA INSCRIPCION
                     if (type === "Inscripción") {
                         dataExcel.push({

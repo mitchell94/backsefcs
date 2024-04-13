@@ -11,7 +11,7 @@ let publicFolder = "";
 let urlIntranet = config.urlIntranet;
 
 if (env === "dev") {
-    URL_PLUBLIC = "C:/Users/MITCHELL/Desktop/SISTEMAS USE/seunsm/public/";
+    URL_PLUBLIC = "C:/Users/51952/Desktop/SISTEMAS USE/seunsm/public/";
     SERVER = config.tempServer;
     URL_LOG = `${appRoot}/server/logs/accessDev.log`;
     URL_FINAL_LOG = `${appRoot}/server/logs/final-dev-log.json`;
