@@ -492,6 +492,9 @@ module.exports = {
                             "state",
                             "created_at",
                             "deleted_at",
+                            // mpt
+                            "selected_date",
+                            // mpt--
                         ],
                         where: { id_student: req.params.id_student },
                         include: [
@@ -576,6 +579,9 @@ module.exports = {
                         state: registrationData[i].state,
                         deleted_at: registrationData[i].deleted_at,
                         created_at: registrationData[i].created_at,
+                        // mpt
+                        selected_date: registrationData[i].selected_date,
+                        // mpt--
                         Academic_semester: {
                             id: registrationData[i].Academic_semester.id,
                             denomination:
@@ -1030,6 +1036,7 @@ module.exports = {
                         id_organic_unit: req.body.id_organic_unit,
                         observation: req.body.observation || null,
                         state: "Pendiente",
+                        selected_date: req.body.selected_date,
                     },
                     { transaction: t }
                 );

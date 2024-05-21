@@ -1287,7 +1287,7 @@ module.exports = {
                 type = "Especialista";
                 id = [
                     115, 102, 113, 39, 86, 98, 6, 122, 108, 107, 106, 17, 110,
-                    126, 116, 128, 109, 129, 130, 131, 132, 133, 112, 105,
+                    126, 116, 128, 109, 129, 130, 131, 132, 133, 112, 105,103,134
                 ];
             }
 
@@ -1814,7 +1814,7 @@ module.exports = {
                 ],
                 where: {
                     id_student: req.studentId,
-                    // state_upload: true
+                    state_upload: true
                     // file: {
                     //     [Op.not]: null,
                     // },

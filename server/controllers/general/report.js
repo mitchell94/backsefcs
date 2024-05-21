@@ -41,6 +41,9 @@ const Document_book = require("../../models").Document_book;
 const Cost_admission_plan = require("../../models").Cost_admission_plan;
 const Requeriment = require("../../models").Requeriment;
 
+// PARA CONSULTAS DE CANTIDAD
+const { QueryTypes } = require("sequelize");
+
 moment.locale("es-mx");
 module.exports = {
     reportPaymentProgramAdmision: async (req, res) => {
@@ -1767,13 +1770,20 @@ module.exports = {
                         dataRegistration.push([
                             course,
                             credit,
-                            note + " " + leterNote,
+                            note, 
+                            leterNote,
                             year.substr(-4) + "-" + _process,
                         ]);
+                        // dataRegistration.push([
+                        //     course,
+                        //     credit,
+                        //     note + " " + leterNote,
+                        //     year.substr(-4) + "-" + _process,
+                        // ]);
                     }
                 }
             } else {
-                dataRegistration = ["", "", "", ""];
+                dataRegistration = ["", "", "", "", ""];
             }
 
             let temp = Math.round((averageScore / totalCourse) * 100) / 100;
@@ -5285,6 +5295,7 @@ module.exports = {
             });
         }
     },
+
     updateStudentType: async (req, res) => {
         try {
             let data = [];
@@ -5320,6 +5331,7 @@ module.exports = {
             });
         }
     },
+
     updateStudentNumberRegistration: async (req, res) => {
         try {
             let data = [];
@@ -5871,6 +5883,317 @@ module.exports = {
                 });
             });
             res.status(200).send(data);
+        } catch (err) {
+            console.log(err);
+            res.status(445).send({
+                message: message.ERROR_TRANSACTION,
+                error: err,
+            });
+        }
+    },
+
+    // CONSULTAS PARA ESTADO DE PERSONAS
+
+    getNumberStudents: async (req, res) => {
+        try {
+            const programs = await Program.findAll({
+                attributes: ["id", "denomination", "abbreviation"],
+                include: [
+                    {
+                        model: Plan,
+                        as: "Plans",
+                        attributes: ["id", "id_program", "description"],
+                        include: [
+                            {
+                                model: Ciclo,
+                                as: "Ciclos",
+                                attributes: ["id", "id_plan"],
+                                where: {
+                                    state: true,
+                                },
+                                include: [
+                                    {
+                                        model: Course,
+                                        as: "Course",
+                                        attributes: ["id", "id_ciclo"],
+                                        separate: true,
+                                        order: [["code", "ASC"]],
+                                    },
+                                ],
+                            },
+                        ],
+                    },
+                ],
+            });
+
+            // Se realiza una copia modificable de la consulta anterior de programas
+            const programsString = JSON.stringify(programs);
+            const programsMod = JSON.parse(programsString);
+
+            for (const program of programsMod) {
+                for (const plan of program.Plans) {
+                    // Número de cursos del plan
+                    plan.totalCoursesPlan = plan.Ciclos.reduce(
+                        (prev, current) => prev + current.Course.length,
+                        0
+                    );
+                    delete plan.Ciclos;
+
+                    // Número total de inscritos en el plan
+                    plan.totalStudentsPlan = await Student.count({
+                        where: {
+                            id_plan: plan.id,
+                        },
+                    });
+
+                    // Lista de estudiantes y sus notas aprobatorias (+14)
+                    let studentsList = await Student.findAll({
+                        attributes: ["id", "type", "id_person"],
+                        where: {
+                            id_plan: plan.id,
+                        },
+                        include: [
+                            {
+                                model: Registration,
+                                as: "Registration",
+                                attributes: ["id", "id_semester", "id_student"],
+                                include: [
+                                    {
+                                        model: Registration_course,
+                                        as: "Registration_course",
+                                        attributes: ["id", "id_course", "note"],
+                                        where: {
+                                            note: {
+                                                [Op.gte]: 14,
+                                            },
+                                        },
+                                    },
+                                ],
+                            },
+                        ],
+                    });
+
+                    // Se realiza una copia modificable de la consulta anterior de estudiantes
+                    const studentsString = JSON.stringify(studentsList);
+                    const studentsMod = JSON.parse(studentsString);
+
+                    // Se agrega la cantidad de cursos aprobados por estudiante
+                    for (let i = 0; i < studentsMod.length; i++) {
+                        let registrations = studentsMod[i].Registration;
+                        let aprovedCourses = 0;
+                        for (let j = 0; j < registrations.length; j++) {
+                            aprovedCourses =
+                                aprovedCourses +
+                                registrations[j].Registration_course.length;
+                        }
+                        studentsMod[i].aprovedCourses = aprovedCourses;
+                        // Se elimina la lista original de matrículas
+                        delete studentsMod[i].Registration;
+                    }
+
+                    // Lista de estudiantes que completaron el plan (todos los cursos plan aprobados)
+                    let studentsWithCompletedPlan = await studentsMod.filter(
+                        (student) =>
+                            student.aprovedCourses == plan.totalCoursesPlan
+                    );
+
+                    // Numero de estudiantes que completaron el plan
+                    plan.studentsWithCompletedPlan =
+                        studentsWithCompletedPlan.length;
+
+                    // Obtener un array con los id de los estudiantes que completaron el plan
+                    let studentsIds = studentsWithCompletedPlan.map(
+                        (student) => student.id
+                    );
+                    // Consultar la cantidad de constancias solicitadas
+                    let studentsGraduate = await Document_book.count({
+                        where: {
+                            id_concept: 115,
+                            id_student: {
+                                [Op.in]: studentsIds,
+                            },
+                        },
+                    });
+
+                    plan.studentesWithConstancy = studentsGraduate;
+
+                    // Consultar la cantidad de estudiantes que desertaron
+                    plan.studentsDeserted = 10;
+                }
+            }
+
+            res.status(200).send({
+                programsMod,
+            });
+        } catch (err) {
+            console.log(err);
+            res.status(445).send({
+                message: message.ERROR_TRANSACTION,
+                error: err,
+            });
+        }
+    },
+
+    getCalendars: async (req, res) => {
+        try {
+            const calendars = await Academic_calendar.findAll({
+                attributes: ["id", "denomination", "state"],
+                include: [
+                    {
+                        model: Academic_semester,
+                        as: "Academic_semesters",
+                        attributes: [
+                            "id",
+                            "id_academic_calendar",
+                            "denomination",
+                        ],
+                        where: {
+                            state: true,
+                        },
+                        include: [
+                            {
+                                model: Registration,
+                                as: "Registrations",
+                                attributes: ["id", "id_semester", "id_student"],
+                            },
+                        ],
+                        separate: true,
+                        order: [["id", "ASC"]],
+                    },
+                ],
+                separate: true,
+                order: [["id", "ASC"]],
+            });
+
+            // Se realiza una copia modificable de la consulta anterior de calendarios
+            const calendarsString = JSON.stringify(calendars);
+            const calendarsMod = JSON.parse(calendarsString);
+
+            // Se agregan los semestres validos a los calendarios
+            calendarsMod.forEach((calendar) => {
+                // Calendario válido cuando tiene al menos un semestre válido
+                calendar.semestersValid = calendar.Academic_semesters.filter(
+                    (semester) => {
+                        // Semestre válido cuando tiene al menos una matrícula
+                        return semester.Registrations.length > 0;
+                    }
+                );
+                delete calendar.Academic_semesters;
+            });
+
+            // Se recuperar unicamente los calendarios validos
+            const calendarsValid = calendarsMod.filter((calendar) => {
+                return calendar.semestersValid.length > 0;
+            });
+
+            // Se crea una lista única y cronológica de los semestres
+            let semestersOrdered = [];
+            let order = 0;
+            await calendarsValid.forEach((calendar) => {
+                let calendarYear = calendar.denomination.trim().slice(-4); // Extrae el año del calendario
+                calendar.semestersValid.forEach((semester) => {
+                    let semesterRoman = semester.denomination
+                        .trim()
+                        .split(" ")[1]; // Extrae el ciclo del semestre
+                    semester.completeName = calendarYear + "-" + semesterRoman;
+                    order++;
+                    semester.order = order;
+                    // delete semester.Registrations;
+                    // delete semester.denomination;
+                    semestersOrdered.push(semester.id);
+                });
+            });
+
+            let allStudents = await Student.findAll({
+                attributes: [
+                    "id",
+                    "id_plan",
+                    "id_admission_plan",
+                    "id_program",
+                ],
+                include: [
+                    {
+                        model: Registration,
+                        as: "Registration",
+                        attributes: ["id", "id_student", "id_semester"],
+                        include: [
+                            {
+                                model: Registration_course,
+                                as: "Registration_course",
+                                attributes: [
+                                    "id",
+                                    "id_registration",
+                                    "id_course",
+                                    "note",
+                                ],
+                                
+                        separate: true,
+                        order: [["id_course", "ASC"]],
+                            },
+                        ],
+                        separate: true,
+                        order: [["id_semester", "ASC"]],
+                    },
+                ],
+            });
+
+            // Se realiza una copia modificable de la consulta anterior de calendarios
+            const allStudentsString = JSON.stringify(allStudents);
+            const students = JSON.parse(allStudentsString);
+
+            // consultar el semestre actual e id
+            let currentSemester = await Academic_semester.findOne({
+                where: { actual: true, state: true },
+            });
+            let currentSemesterId = currentSemester.id;
+
+            students.forEach((student) => {
+                student.RegistrationsValid = student.Registration.filter(
+                    (registration) =>
+                        registration.Registration_course.length > 0
+                );
+                delete student.Registration;
+
+                // Detectar el semestre de primera matricula
+                let firstRegistration = student.RegistrationsValid[0].id_semester
+
+                // Buscar que posicion ocupa el semestre de inicio entre los demas semestres
+                // let firstSemesterPosition = 
+
+                if (student.RegistrationsValid.length == 0) {
+                    // Sin matrículas
+                    student.stateQuery = "Desertado";
+                // } else if (student.RegistrationsValid.length && student.RegistrationsValid[]) {
+                //     // Detectar el semestre de primera matrícula
+                //     student.RegistrationsValid.forEach((registration) => {
+                        
+                //     });
+                }
+            });
+
+            // for (let i = 0; i < students.length; i++) {
+            //     studendts[i].Registration
+            //     // let registrations = await Registration.findAll({
+            //     //     where: {
+            //     //         id_student: students[i].id
+            //     //     }
+            //     // })
+            //     // Buscar el semestre inicial segun el plan de estudios
+            //     // let positionFirstSemester = semestersOrdered.findIndex(students[i].Admission_plan.id_process);
+            // }
+
+            // students.forEach(student => {
+            //     semestersOrdered.forEach(semester => {
+            //         student.Admission_plan.id_process
+            //     })
+            // })
+
+            res.status(200).send({
+                semestersOrdered,
+                // calendarsValid,
+                students,
+                currentSemesterId,
+            });
         } catch (err) {
             console.log(err);
             res.status(445).send({

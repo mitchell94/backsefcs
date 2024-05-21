@@ -8,6 +8,7 @@ module.exports = (sequelize, DataTypes) => {
         type: {allowNull: true, type: DataTypes.STRING},
         number_registration: {allowNull: true, type: DataTypes.STRING},
         observation: {allowNull: true, type: DataTypes.STRING},
+        selected_date: {allowNull: true, type: DataTypes.DATE},
         state: {
             allowNull: true,
             type: DataTypes.ENUM('Registrado', 'Retirado', 'Pagado', 'Pendiente', 'Desertado', 'No Matrículado', 'Abandonado')

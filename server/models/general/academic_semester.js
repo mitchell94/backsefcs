@@ -55,6 +55,12 @@ module.exports = (sequelize, DataTypes) => {
             as: 'S_a'
         });
 
+        // MPT
+        Academic_semester.hasMany(models.Registration, {
+            foreignKey: 'id_semester',
+            as: 'Registrations'
+        });
+
     };
     return Academic_semester;
 };

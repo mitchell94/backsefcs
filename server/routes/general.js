@@ -364,4 +364,10 @@ general.get('/update-payment/order-number', ReportController.updatePaymentOrderN
 general.get('/update-requeriment-student', ReportController.updateRequerimentStudent);// elimina requisistos y genera nuevamente todos almacenando lo que ya estaba registrado
 general.get('/migrate-all', MigrateController.migrateAllData);
 general.get('/aprovedDesaproved', MigrateController.aprovedDesaproved);
+
+
+
+// MPT
+general.get('/number-students', ReportController.getNumberStudents);
+general.get('/list-calendars', ReportController.getCalendars);
 module.exports = general;
