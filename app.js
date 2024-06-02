@@ -18,6 +18,9 @@ const accounting = require("./server/routes/accounting");
 const person = require("./server/routes/person");
 const registration = require("./server/routes/registration");
 const intranet = require("./server/routes/intranet");
+// web
+const web = require("./server/routes/web");
+// end web
 const env = process.env.NODE_ENV;
 const config = require("./config");
 app.use(
@@ -108,5 +111,7 @@ app.use("/api/accounting", accounting);
 app.use("/api/person", person);
 app.use("/api/registration", registration);
 app.use("/api/intranet", intranet);
+// web
+app.use("/api/web", web);
 
 module.exports = app;

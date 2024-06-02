@@ -1770,7 +1770,7 @@ module.exports = {
                         dataRegistration.push([
                             course,
                             credit,
-                            note, 
+                            note,
                             leterNote,
                             year.substr(-4) + "-" + _process,
                         ]);
@@ -6126,9 +6126,9 @@ module.exports = {
                                     "id_course",
                                     "note",
                                 ],
-                                
-                        separate: true,
-                        order: [["id_course", "ASC"]],
+
+                                separate: true,
+                                order: [["id_course", "ASC"]],
                             },
                         ],
                         separate: true,
@@ -6155,19 +6155,20 @@ module.exports = {
                 delete student.Registration;
 
                 // Detectar el semestre de primera matricula
-                let firstRegistration = student.RegistrationsValid[0].id_semester
+                let firstRegistration =
+                    student.RegistrationsValid[0].id_semester;
 
                 // Buscar que posicion ocupa el semestre de inicio entre los demas semestres
-                // let firstSemesterPosition = 
+                // let firstSemesterPosition =
 
                 if (student.RegistrationsValid.length == 0) {
                     // Sin matrículas
                     student.stateQuery = "Desertado";
-                // } else if (student.RegistrationsValid.length && student.RegistrationsValid[]) {
-                //     // Detectar el semestre de primera matrícula
-                //     student.RegistrationsValid.forEach((registration) => {
-                        
-                //     });
+                    // } else if (student.RegistrationsValid.length && student.RegistrationsValid[]) {
+                    //     // Detectar el semestre de primera matrícula
+                    //     student.RegistrationsValid.forEach((registration) => {
+
+                    //     });
                 }
             });
 

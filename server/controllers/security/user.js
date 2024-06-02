@@ -158,19 +158,21 @@ module.exports = {
                 );
                 if (userDemi) throw "Este usuario ya ha sido registrado";
 
-                let out = await abox.templateSendUserCredential(
-                    req.body.name,
-                    req.body.document_number,
-                    req.body.pass
-                );
-                const mailOptions = {
-                    from: "soporte@unsm.edu.pe",
-                    to: req.body.email,
-                    subject: "SEUNSM: Credenciales de acceso",
-                    html: out,
-                };
-                let sendMail = await abox.wrapedSendMail(mailOptions);
-                if (sendMail) {
+                // let out = await abox.templateSendUserCredential(
+                //     req.body.name,
+                //     req.body.document_number,
+                //     req.body.pass
+                // );
+                // const mailOptions = {
+                //     from: "soporte@unsm.edu.pe",
+                //     to: req.body.email,
+                //     subject: "SEUNSM: Credenciales de acceso",
+                //     html: out,
+                // };
+                // let sendMail = await abox.wrapedSendMail(mailOptions);
+                // if (!sendMail) {
+                let obviarmail = 1; // se usa solo para no desacomodar el "if"
+                if (obviarmail === 1) {
                     let userData = await Model.create(
                         {
                             id: uuid(),
