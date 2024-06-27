@@ -370,4 +370,5 @@ general.get('/aprovedDesaproved', MigrateController.aprovedDesaproved);
 // MPT
 general.get('/number-students', ReportController.getNumberStudents);
 general.get('/list-calendars', ReportController.getCalendars);
+general.get('/list-programs/:id_program', ReportController.getProgram);
 module.exports = general;

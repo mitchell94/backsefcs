@@ -65,6 +65,12 @@ module.exports = (sequelize, DataTypes) => {
             foreignKey: 'id_admission_plan',
             as: 'Cost_admission_plans',
         });
+
+        // MPT
+        Admission_plan.hasMany(models.Student, {
+            foreignKey: 'id_admission_plan',
+            as: 'Students',
+        });
     };
     return Admission_plan;
 };

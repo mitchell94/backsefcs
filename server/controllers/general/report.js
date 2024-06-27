@@ -45,6 +45,234 @@ const Requeriment = require("../../models").Requeriment;
 const { QueryTypes } = require("sequelize");
 
 moment.locale("es-mx");
+
+const getOrderedSemesters = async (req, res, id_program) => {
+    try {
+        const calendars = await Academic_calendar.findAll({
+            attributes: ["id", "denomination", "state"],
+            include: [
+                {
+                    model: Academic_semester,
+                    as: "Academic_semesters",
+                    attributes: [
+                        "id",
+                        "id_academic_calendar",
+                        "denomination",
+                    ],
+                    where: {
+                        state: true,
+                    },
+                    include: [
+                        {
+                            model: Registration,
+                            as: "Registrations",
+                            attributes: ["id", "id_semester", "id_student"],
+                            where: {
+                                id_program: id_program
+                            }
+                        },
+                    ],
+                    separate: true,
+                    order: [["id", "ASC"]],
+                },
+            ],
+            separate: true,
+            order: [["id", "ASC"]],
+        });
+
+        // Se realiza una copia modificable de la consulta anterior de calendarios
+        const calendarsString = JSON.stringify(calendars);
+        const calendarsMod = JSON.parse(calendarsString);
+
+        // Se agregan los semestres válidos a los calendarios
+        calendarsMod.forEach((calendar) => {
+            // Calendario válido cuando tiene al menos un semestre válido
+            calendar.semestersValid = calendar.Academic_semesters.filter(
+                (semester) => {
+                    // Semestre válido cuando tiene al menos una matrícula
+                    return semester.Registrations.length > 0;
+                }
+            );
+            delete calendar.Academic_semesters;
+        });
+
+        // Se recuperan únicamente los calendarios válidos
+        const calendarsValid = calendarsMod.filter((calendar) => {
+            return calendar.semestersValid.length > 0;
+        });
+
+        // Se crea una lista única y cronológica de los semestres
+        let orderedSemesters = [];
+        let order = 0;
+        calendarsValid.forEach((calendar) => {
+            let calendarYear = calendar.denomination.trim().slice(-4); // Extrae el año del calendario
+            calendar.semestersValid.forEach((semester) => {
+                let semesterRoman = semester.denomination
+                    .trim()
+                    .split(" ")[1]; // Extrae el ciclo del semestre
+                semester.completeName = calendarYear + "-" + semesterRoman;
+                order++;
+                semester.order = order;
+                // delete semester.Registrations;
+                // delete semester.denomination;
+                orderedSemesters.push(semester);
+            });
+        });
+
+        return orderedSemesters;
+    } catch (err) {
+        console.log(err);
+        throw new Error('Error fetching semesters');
+    }
+};
+
+const getProgram = async (req, res) => {
+    try {
+        const program = await Program.findOne({
+            attributes: ["id", "denomination"],
+            where: {
+                id: req.params.id_program
+            },
+            include: [
+                {
+                    model: Admission_plan,
+                    as: "Admission_plans",
+                    attributes: [
+                        "id",
+                        "description",
+                        "id_process"
+                    ],
+                    include: [
+                        {
+                            model: Student,
+                            as: "Students",
+                            attributes: [
+                                "id",
+                                "id_person",
+                                // "id_program",
+                                // "id_admission_plan"
+                            ]
+                        }
+                    ],
+                },
+            ],
+            order: [
+                [{ model: Admission_plan, as: "Admission_plans" }, "id_process", "ASC"],
+            ],
+        });
+
+        const programString = JSON.stringify(program);
+        const programMod = JSON.parse(programString);
+
+        // Estudiantes inscritos por plan de admision
+        const admissionPlans = programMod.Admission_plans.filter(plan => plan.Students.length > 0);
+
+        // Matrículas por semestre
+        const semestersOfProgram = await getOrderedSemesters(req, res, req.params.id_program);
+
+        const completedPlan = 0;
+        const deserted = 0;
+        const egress = 0;
+
+        // Buscar matrículas en los 3 semestres continuos
+        admissionPlans.forEach(plan => {
+            plan.Students.forEach(student => {
+                let registrationsNumber = 0;
+                let positionsSemesters = [];
+
+                for (let i = 0; i < semestersOfProgram.length; i++) {
+                    let registrationsOfSemester = semestersOfProgram[i].Registrations;
+
+                    // obtener las posiciones que ocupan todos los semestres que estudió
+                    if (semestersOfProgram[i].id == plan.id) {
+                        positionsSemesters = [i, i + 1, i + 2];
+                    }
+
+                    // sumar cantidad de matrículas por estudiante
+                    for (let j = 0; j < registrationsOfSemester.length; j++) {
+                        if (registrationsOfSemester[j].id_student == student.id) {
+                            if (condition) {
+                                
+                            }
+                            registrationsNumber++;
+                            break;
+                        }
+                    }
+                }
+            });
+        });
+
+        // estudiantes por proceso
+        // let studentsForSemester = await Student.findAll({
+        //     attributes: ["id", "type", "id_person"],
+        //     // where: {
+        //     //     id_plan: plan.id,
+        //     // },
+
+        //     include: [
+        //         {
+        //             model: Registration,
+        //             as: "Registration",
+        //             attributes: ["id", "id_semester", "id_student"],
+        //             where: {
+        //                 id_program: req.params.id_program
+        //             },
+        //             // include: [
+        //             //     {
+        //             //         model: Registration_course,
+        //             //         as: "Registration_course",
+        //             //         attributes: ["id", "id_course", "note"],
+        //             //         // where: {
+        //             //         //     note: {
+        //             //         //         [Op.gte]: 14,
+        //             //         //     },
+        //             //         // },
+        //             //     },
+        //             // ],
+        //         },
+        //     ],
+        // });
+
+        // estudiantes matriculados por semestre
+        // let allRegistrations = []
+        // listSemester.forEach(async (semester) => {
+        //     let registrations = await Registration.findAll({
+        //         // where: {
+        //         //     id_semester: semester,
+        //         //     id_program: req.params.id_program
+        //         // }
+        //     });
+        //     allRegistrations.push(registrations)
+        // })
+
+        // for (let i = 0; i < listSemester.length; i++) {
+        //     let registrations = await Registration.findAll({
+        //         where: {
+        //             id_semester: listSemester[i],
+        //             id_program: req.params.id_program
+        //         }
+        //     });
+        //     allRegistrations.push(registrations)
+        // }
+
+
+        // Enviar la respuesta con los datos obtenidos
+        res.status(200).send({
+            admissionPlans,
+            semestersOfProgram,
+            // studentsForSemester,
+            // allRegistrations
+            // programs
+        });
+    } catch (err) {
+        console.log(err);
+        res.status(445).send({
+            message: message.ERROR_TRANSACTION,
+            error: err,
+        });
+    }
+};
+
 module.exports = {
     reportPaymentProgramAdmision: async (req, res) => {
         try {
@@ -364,13 +592,13 @@ module.exports = {
                         : null;
                     codigosedefilial =
                         students[i].Admission_plan &&
-                        students[i].Admission_plan.Program &&
-                        students[i].Admission_plan.Program
-                            .Organic_unit_register &&
-                        students[i].Admission_plan.Program.Organic_unit_register
-                            .Campu
+                            students[i].Admission_plan.Program &&
+                            students[i].Admission_plan.Program
+                                .Organic_unit_register &&
+                            students[i].Admission_plan.Program.Organic_unit_register
+                                .Campu
                             ? students[i].Admission_plan.Program
-                                  .Organic_unit_register.Campu.code
+                                .Organic_unit_register.Campu.code
                             : null;
                     tipoproceso = students[i].Admission_plan
                         ? students[i].Admission_plan.type_process
@@ -407,14 +635,14 @@ module.exports = {
                         : null;
                     codigofacultadunidad =
                         students[i].Admission_plan &&
-                        students[i].Admission_plan.Program &&
-                        students[i].Admission_plan.Program.Organic_unit_register
+                            students[i].Admission_plan.Program &&
+                            students[i].Admission_plan.Program.Organic_unit_register
                             ? students[i].Admission_plan.Program
-                                  .Organic_unit_register.code_faculty_unit
+                                .Organic_unit_register.code_faculty_unit
                             : null;
                     codigoprograma =
                         students[i].Admission_plan &&
-                        students[i].Admission_plan.Program
+                            students[i].Admission_plan.Program
                             ? students[i].Admission_plan.Program.code
                             : null;
 
@@ -433,24 +661,24 @@ module.exports = {
                         modalidadeingresotemp === 81
                             ? 8
                             : modalidadeingresotemp === 82
-                            ? 2
-                            : 3;
+                                ? 2
+                                : 3;
 
                     process =
                         students[i].Admission_plan &&
-                        students[i].Admission_plan.Process
+                            students[i].Admission_plan.Process
                             ? students[i].Admission_plan.Process.denomination
                             : null;
                     year =
                         students[i].Admission_plan &&
-                        students[i].Admission_plan.Process &&
-                        students[i].Admission_plan.Process.Academic_calendar
+                            students[i].Admission_plan.Process &&
+                            students[i].Admission_plan.Process.Academic_calendar
                             ? students[i].Admission_plan.Process
-                                  .Academic_calendar.denomination
+                                .Academic_calendar.denomination
                             : null;
                     programa =
                         students[i].Admission_plan &&
-                        students[i].Admission_plan.Program
+                            students[i].Admission_plan.Program
                             ? students[i].Admission_plan.Program.description
                             : "No def";
 
@@ -620,25 +848,25 @@ module.exports = {
                     // proceso = students[i].Admission_plan ? students[i].Admission_plan.date_start : null;
                     programa =
                         students[i].Admission_plan &&
-                        students[i].Admission_plan.Program
+                            students[i].Admission_plan.Program
                             ? students[i].Admission_plan.Program.denomination
                             : null;
                     unidadorganica =
                         students[i].Admission_plan &&
-                        students[i].Admission_plan.Program &&
-                        students[i].Admission_plan.Program.Organic_unit_register
+                            students[i].Admission_plan.Program &&
+                            students[i].Admission_plan.Program.Organic_unit_register
                             ? students[i].Admission_plan.Program
-                                  .Organic_unit_register.denomination
+                                .Organic_unit_register.denomination
                             : null;
                     sede =
                         students[i].Admission_plan &&
-                        students[i].Admission_plan.Program &&
-                        students[i].Admission_plan.Program
-                            .Organic_unit_register &&
-                        students[i].Admission_plan.Program.Organic_unit_register
-                            .Campu
+                            students[i].Admission_plan.Program &&
+                            students[i].Admission_plan.Program
+                                .Organic_unit_register &&
+                            students[i].Admission_plan.Program.Organic_unit_register
+                                .Campu
                             ? students[i].Admission_plan.Program
-                                  .Organic_unit_register.Campu.denomination
+                                .Organic_unit_register.Campu.denomination
                             : null;
                     documento = students[i].Person
                         ? students[i].Person.document_number
@@ -657,15 +885,15 @@ module.exports = {
                         : null;
                     process =
                         students[i].Admission_plan &&
-                        students[i].Admission_plan.Process
+                            students[i].Admission_plan.Process
                             ? students[i].Admission_plan.Process.denomination
                             : null;
                     year =
                         students[i].Admission_plan &&
-                        students[i].Admission_plan.Process &&
-                        students[i].Admission_plan.Process.Academic_calendar
+                            students[i].Admission_plan.Process &&
+                            students[i].Admission_plan.Process.Academic_calendar
                             ? students[i].Admission_plan.Process
-                                  .Academic_calendar.denomination
+                                .Academic_calendar.denomination
                             : null;
 
                     data.push({
@@ -811,25 +1039,25 @@ module.exports = {
                     // proceso = students[i].Admission_plan ? students[i].Admission_plan.date_start : null;
                     programa =
                         students[i].Admission_plan &&
-                        students[i].Admission_plan.Program
+                            students[i].Admission_plan.Program
                             ? students[i].Admission_plan.Program.denomination
                             : null;
                     unidadorganica =
                         students[i].Admission_plan &&
-                        students[i].Admission_plan.Program &&
-                        students[i].Admission_plan.Program.Organic_unit_register
+                            students[i].Admission_plan.Program &&
+                            students[i].Admission_plan.Program.Organic_unit_register
                             ? students[i].Admission_plan.Program
-                                  .Organic_unit_register.denomination
+                                .Organic_unit_register.denomination
                             : null;
                     sede =
                         students[i].Admission_plan &&
-                        students[i].Admission_plan.Program &&
-                        students[i].Admission_plan.Program
-                            .Organic_unit_register &&
-                        students[i].Admission_plan.Program.Organic_unit_register
-                            .Campu
+                            students[i].Admission_plan.Program &&
+                            students[i].Admission_plan.Program
+                                .Organic_unit_register &&
+                            students[i].Admission_plan.Program.Organic_unit_register
+                                .Campu
                             ? students[i].Admission_plan.Program
-                                  .Organic_unit_register.Campu.denomination
+                                .Organic_unit_register.Campu.denomination
                             : null;
                     documento = students[i].Person
                         ? students[i].Person.document_number
@@ -848,15 +1076,15 @@ module.exports = {
                         : null;
                     process =
                         students[i].Admission_plan &&
-                        students[i].Admission_plan.Process
+                            students[i].Admission_plan.Process
                             ? students[i].Admission_plan.Process.denomination
                             : null;
                     year =
                         students[i].Admission_plan &&
-                        students[i].Admission_plan.Process &&
-                        students[i].Admission_plan.Process.Academic_calendar
+                            students[i].Admission_plan.Process &&
+                            students[i].Admission_plan.Process.Academic_calendar
                             ? students[i].Admission_plan.Process
-                                  .Academic_calendar.denomination
+                                .Academic_calendar.denomination
                             : null;
 
                     data.push({
@@ -965,15 +1193,15 @@ module.exports = {
                         : null;
                 unidadorganica =
                     students[i].Student &&
-                    students[i].Student.Organic_unit_register
+                        students[i].Student.Organic_unit_register
                         ? students[i].Student.Organic_unit_register.denomination
                         : null;
                 sede =
                     students[i].Student &&
-                    students[i].Student.Organic_unit_register &&
-                    students[i].Student.Organic_unit_register.Campu
+                        students[i].Student.Organic_unit_register &&
+                        students[i].Student.Organic_unit_register.Campu
                         ? students[i].Student.Organic_unit_register.Campu
-                              .denomination
+                            .denomination
                         : null;
                 documento =
                     students[i].Student && students[i].Student.Person
@@ -1160,8 +1388,8 @@ module.exports = {
                     );
                 admissionPlan =
                     _data[i].Student &&
-                    _data[i].Student.Admission_plan &&
-                    _data[i].Student.Admission_plan.description
+                        _data[i].Student.Admission_plan &&
+                        _data[i].Student.Admission_plan.description
                         ? _data[i].Student.Admission_plan.description.substr(8)
                         : "No def";
                 data.push({
@@ -1182,8 +1410,8 @@ module.exports = {
                         modalidaEstudio === "Presencial"
                             ? 1
                             : modalidaEstudio === "Semi-Presencial"
-                            ? 2
-                            : 3,
+                                ? 2
+                                : 3,
                     FECHA_MATRICULA: fechaMatricula,
                     CODIGO_ESCALA_PAGO: "",
                     PORCENTAJE_DESCUENTO: "",
@@ -1281,15 +1509,15 @@ module.exports = {
                         : null;
                 unidadorganica =
                     students[i].Student &&
-                    students[i].Student.Organic_unit_register
+                        students[i].Student.Organic_unit_register
                         ? students[i].Student.Organic_unit_register.denomination
                         : null;
                 sede =
                     students[i].Student &&
-                    students[i].Student.Organic_unit_register &&
-                    students[i].Student.Organic_unit_register.Campu
+                        students[i].Student.Organic_unit_register &&
+                        students[i].Student.Organic_unit_register.Campu
                         ? students[i].Student.Organic_unit_register.Campu
-                              .denomination
+                            .denomination
                         : null;
                 documento =
                     students[i].Student && students[i].Student.Person
@@ -2109,19 +2337,19 @@ module.exports = {
                 studentRegister[0].Academic_semester.Academic_calendar.denomination.substr(
                     -4
                 ) +
-                    "-" +
-                    studentRegister[0].Academic_semester.denomination.substr(
-                        -2
-                    );
+                "-" +
+                studentRegister[0].Academic_semester.denomination.substr(
+                    -2
+                );
             lastRegister =
                 studentRegister[studentRegister.length - 1] &&
                 studentRegister[
                     studentRegister.length - 1
                 ].Academic_semester.Academic_calendar.denomination.substr(-4) +
-                    "-" +
-                    studentRegister[
-                        studentRegister.length - 1
-                    ].Academic_semester.denomination.substr(-2);
+                "-" +
+                studentRegister[
+                    studentRegister.length - 1
+                ].Academic_semester.denomination.substr(-2);
             correlative =
                 documentBook.correlative +
                 "-" +
@@ -2476,19 +2704,19 @@ module.exports = {
                 studentRegister[0].Academic_semester.Academic_calendar.denomination.substr(
                     -4
                 ) +
-                    "-" +
-                    studentRegister[0].Academic_semester.denomination.substr(
-                        -2
-                    );
+                "-" +
+                studentRegister[0].Academic_semester.denomination.substr(
+                    -2
+                );
             lastRegister =
                 studentRegister[studentRegister.length - 1] &&
                 studentRegister[
                     studentRegister.length - 1
                 ].Academic_semester.Academic_calendar.denomination.substr(-4) +
-                    "-" +
-                    studentRegister[
-                        studentRegister.length - 1
-                    ].Academic_semester.denomination.substr(-2);
+                "-" +
+                studentRegister[
+                    studentRegister.length - 1
+                ].Academic_semester.denomination.substr(-2);
             res.status(200).send({
                 principalOrganicUnit,
                 authorityTypeG,
@@ -2782,19 +3010,19 @@ module.exports = {
                 studentRegister[0].Academic_semester.Academic_calendar.denomination.substr(
                     -4
                 ) +
-                    "-" +
-                    studentRegister[0].Academic_semester.denomination.substr(
-                        -2
-                    );
+                "-" +
+                studentRegister[0].Academic_semester.denomination.substr(
+                    -2
+                );
             lastRegister =
                 studentRegister[studentRegister.length - 1] &&
                 studentRegister[
                     studentRegister.length - 1
                 ].Academic_semester.Academic_calendar.denomination.substr(-4) +
-                    "-" +
-                    studentRegister[
-                        studentRegister.length - 1
-                    ].Academic_semester.denomination.substr(-2);
+                "-" +
+                studentRegister[
+                    studentRegister.length - 1
+                ].Academic_semester.denomination.substr(-2);
             res.status(200).send({
                 principalOrganicUnit,
                 authorityTypeG,
@@ -3075,7 +3303,7 @@ module.exports = {
                         state: true,
                         note_state:
                             registrationData[i].Registration_course[j].state ===
-                            "Sin nota"
+                                "Sin nota"
                                 ? true
                                 : false, //genero este estado para poder manejar mejor en la vista
                         //registration table
@@ -3977,58 +4205,58 @@ module.exports = {
                                 payments[clave][0] == null
                                     ? "Null"
                                     : payments[clave][0].Payment.type ===
-                                      "Pagado"
-                                    ? payments[clave][0].Payment.amount
-                                    : "-",
+                                        "Pagado"
+                                        ? payments[clave][0].Payment.amount
+                                        : "-",
                             MATRÍCULA:
                                 payments[clave][1] == null
                                     ? "Null"
                                     : payments[clave][1].Payment.type ===
-                                      "Pagado"
-                                    ? payments[clave][1].Payment.amount
-                                    : "-",
+                                        "Pagado"
+                                        ? payments[clave][1].Payment.amount
+                                        : "-",
                             "COUTA 1":
                                 payments[clave][2] == null
                                     ? "Null"
                                     : payments[clave][2].Payment.type ===
-                                      "Pagado"
-                                    ? payments[clave][2].Payment.amount
-                                    : "-",
+                                        "Pagado"
+                                        ? payments[clave][2].Payment.amount
+                                        : "-",
                             "COUTA 2":
                                 payments[clave][3] == null
                                     ? "Null"
                                     : payments[clave][3].Payment.type ===
-                                      "Pagado"
-                                    ? payments[clave][3].Payment.amount
-                                    : "-",
+                                        "Pagado"
+                                        ? payments[clave][3].Payment.amount
+                                        : "-",
                             "COUTA 3":
                                 payments[clave][4] == null
                                     ? "Null"
                                     : payments[clave][4].Payment.type ===
-                                      "Pagado"
-                                    ? payments[clave][4].Payment.amount
-                                    : "-",
+                                        "Pagado"
+                                        ? payments[clave][4].Payment.amount
+                                        : "-",
                             "COUTA 4":
                                 payments[clave][5] == null
                                     ? "Null"
                                     : payments[clave][5].Payment.type ===
-                                      "Pagado"
-                                    ? payments[clave][5].Payment.amount
-                                    : "-",
+                                        "Pagado"
+                                        ? payments[clave][5].Payment.amount
+                                        : "-",
                             "COUTA 5":
                                 payments[clave][6] == null
                                     ? "Null"
                                     : payments[clave][6].Payment.type ===
-                                      "Pagado"
-                                    ? payments[clave][6].Payment.amount
-                                    : "-",
+                                        "Pagado"
+                                        ? payments[clave][6].Payment.amount
+                                        : "-",
                             "COUTA 6":
                                 payments[clave][7] == null
                                     ? "Null"
                                     : payments[clave][7].Payment.type ===
-                                      "Pagado"
-                                    ? payments[clave][7].Payment.amount
-                                    : "-",
+                                        "Pagado"
+                                        ? payments[clave][7].Payment.amount
+                                        : "-",
                             // "COUTA 7":
                             //     payments[clave][8] == null
                             //         ? "Null"
@@ -4054,51 +4282,51 @@ module.exports = {
                                 payments[clave][0] == null
                                     ? "Null"
                                     : payments[clave][0].Payment.type ===
-                                      "Pagado"
-                                    ? payments[clave][0].Payment.amount
-                                    : "-",
+                                        "Pagado"
+                                        ? payments[clave][0].Payment.amount
+                                        : "-",
                             "COUTA 1":
                                 payments[clave][1] == null
                                     ? "Null"
                                     : payments[clave][1].Payment.type ===
-                                      "Pagado"
-                                    ? payments[clave][1].Payment.amount
-                                    : "-",
+                                        "Pagado"
+                                        ? payments[clave][1].Payment.amount
+                                        : "-",
                             "COUTA 2":
                                 payments[clave][2] == null
                                     ? "Null"
                                     : payments[clave][2].Payment.type ===
-                                      "Pagado"
-                                    ? payments[clave][2].Payment.amount
-                                    : "-",
+                                        "Pagado"
+                                        ? payments[clave][2].Payment.amount
+                                        : "-",
                             "COUTA 3":
                                 payments[clave][3] == null
                                     ? "Null"
                                     : payments[clave][3].Payment.type ===
-                                      "Pagado"
-                                    ? payments[clave][3].Payment.amount
-                                    : "-",
+                                        "Pagado"
+                                        ? payments[clave][3].Payment.amount
+                                        : "-",
                             "COUTA 4":
                                 payments[clave][4] == null
                                     ? "Null"
                                     : payments[clave][4].Payment.type ===
-                                      "Pagado"
-                                    ? payments[clave][4].Payment.amount
-                                    : "-",
+                                        "Pagado"
+                                        ? payments[clave][4].Payment.amount
+                                        : "-",
                             "COUTA 5":
                                 payments[clave][5] == null
                                     ? "Null"
                                     : payments[clave][5].Payment.type ===
-                                      "Pagado"
-                                    ? payments[clave][5].Payment.amount
-                                    : "-",
+                                        "Pagado"
+                                        ? payments[clave][5].Payment.amount
+                                        : "-",
                             "COUTA 6":
                                 payments[clave][6] == null
                                     ? "Null"
                                     : payments[clave][6].Payment.type ===
-                                      "Pagado"
-                                    ? payments[clave][6].Payment.amount
-                                    : "-",
+                                        "Pagado"
+                                        ? payments[clave][6].Payment.amount
+                                        : "-",
                             // "COUTA 7":
                             //     payments[clave][7] == null
                             //         ? "Null"
@@ -5760,7 +5988,7 @@ module.exports = {
                         j;
                         j < students[i].Requeriment_delivereds.length;
                         j++
-                    ) {}
+                    ) { }
                 }
                 data2 = students;
             });
@@ -6059,6 +6287,9 @@ module.exports = {
                         ],
                         separate: true,
                         order: [["id", "ASC"]],
+                        // order: [
+                        //     [{ model: Registration, as: "Registrations" }, "id", "ASC"],
+                        // ],
                     },
                 ],
                 separate: true,
@@ -6087,7 +6318,7 @@ module.exports = {
             });
 
             // Se crea una lista única y cronológica de los semestres
-            let semestersOrdered = [];
+            let orderedSemesters = [];
             let order = 0;
             await calendarsValid.forEach((calendar) => {
                 let calendarYear = calendar.denomination.trim().slice(-4); // Extrae el año del calendario
@@ -6100,7 +6331,7 @@ module.exports = {
                     semester.order = order;
                     // delete semester.Registrations;
                     // delete semester.denomination;
-                    semestersOrdered.push(semester.id);
+                    orderedSemesters.push(semester.id);
                 });
             });
 
@@ -6155,8 +6386,8 @@ module.exports = {
                 delete student.Registration;
 
                 // Detectar el semestre de primera matricula
-                let firstRegistration =
-                    student.RegistrationsValid[0].id_semester;
+                // let firstRegistration =
+                //     student.RegistrationsValid[0].id_semester;
 
                 // Buscar que posicion ocupa el semestre de inicio entre los demas semestres
                 // let firstSemesterPosition =
@@ -6180,17 +6411,17 @@ module.exports = {
             //     //     }
             //     // })
             //     // Buscar el semestre inicial segun el plan de estudios
-            //     // let positionFirstSemester = semestersOrdered.findIndex(students[i].Admission_plan.id_process);
+            //     // let positionFirstSemester = orderedSemesters.findIndex(students[i].Admission_plan.id_process);
             // }
 
             // students.forEach(student => {
-            //     semestersOrdered.forEach(semester => {
+            //     orderedSemesters.forEach(semester => {
             //         student.Admission_plan.id_process
             //     })
             // })
 
             res.status(200).send({
-                semestersOrdered,
+                orderedSemesters,
                 // calendarsValid,
                 students,
                 currentSemesterId,
@@ -6203,4 +6434,7 @@ module.exports = {
             });
         }
     },
+
+    getOrderedSemesters,
+    getProgram
 };
